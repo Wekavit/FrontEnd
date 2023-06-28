@@ -15,6 +15,7 @@ module.exports = {
       backgroundColor: {
         "back-color": "#EDEDED",
         "primary-color": "#007FFF",
+        "hero-color" : "#F6F9FC"
       },
       colors: {
         "black-text": " #3C4257",
