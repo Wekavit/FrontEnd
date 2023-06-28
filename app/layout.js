@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Sora } from "next/font/google";
+// import { Poppins } from "next/font/google";
 
 const sora = Sora({ subsets: ["latin"] });
 
@@ -12,6 +13,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={sora.className}>{children}</body>
+      {/* <body className={sora.className}>{children}</body> */}
     </html>
   );
 }
