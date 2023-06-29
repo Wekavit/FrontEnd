@@ -2,8 +2,7 @@ import "./globals.css";
 import { Sora } from "next/font/google";
 import { Poppins } from "next/font/google";
 
-const poppins = Poppins({ subsets: ["latin"],
-weight : "400" });
+const poppins = Poppins({ subsets: ["latin"], weight: "400" });
 
 export const metadata = {
   title: "Épargnez & investissez judicieusement votre argent - Wekavit",
@@ -14,8 +13,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={poppins.className}>{children}</body>
-      {/* <body className={sora.className}>{children}</body> */}
+      <body className={poppins.className}>
+        <main className="w-full h-screen bg-hero-color">{children}</main>
+      </body>
     </html>
   );
 }
