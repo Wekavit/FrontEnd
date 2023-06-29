@@ -7,7 +7,7 @@ const Navbar = () => {
     <>
       {/* navbar section  */}
       <div className="w-full h-10vh bg-black z-10 flex fixed top-0 bg-transparent items-center justify-between px-11 sm:px-1">
-        <div className=" w-1/5 h-auto">
+        <div className=" w-1/5 h-auto -mt-4">
           <Image
             src={Logo}
             width={200}
