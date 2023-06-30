@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={poppins.className}>
-        <main className="w-full h-screen bg-hero-color">{children}</main>
+        <main className="w-full h-auto bg-hero-color">{children}</main>
       </body>
     </html>
   );

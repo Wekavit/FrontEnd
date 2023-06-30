@@ -33,6 +33,12 @@ module.exports = {
       // Width
       height: {
         "10vh": "11vh",
+        "89vh": "89vh",
+      },
+
+      // Margin etc...
+      margin: {
+        "11vh": "11vh",
       },
     },
   },

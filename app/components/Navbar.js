@@ -1,32 +1,53 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import Image from "next/image";
-import { Logo, Login, Notext } from "@/assets";
+import Link from "next/link";
+import { Logo, Login } from "@/assets";
 
 const Navbar = () => {
+  const Links = [
+    { text: "Services", href: "#" },
+    { text: "A propos", href: "#about" },
+    { text: "FAQs", href: "#faqs" },
+  ];
+
+  const pathname = usePathname();
+  let isActive;
   return (
     <>
       {/* navbar section  */}
-      <div className="w-full h-10vh bg-black z-10 flex fixed top-0 bg-transparent items-center justify-between px-11 sm:px-1">
+      <div className="w-full h-10vh flex fixed top-0 bg-transparent items-center justify-between px-11 sm:px-1">
         <div className=" w-1/5 h-auto -mt-4">
           <Image
             src={Logo}
             width={200}
             height={200}
-            alt="Picture of the author"
+            alt="Avatar wekavit"
             className="sm:w-2/2 sm:opacity-0 sm:w-0 sm:h-0"
             draggable={false}
           />
         </div>
         <ul className="flex justify-center text-black-text font-medium text-sm sm:w-0 sm:opacity-0">
-          <li className="ml-6 mr-6 cursor-pointer hover:text-primary-color transition-colors">
-            Services
-          </li>
-          <li className="ml-6 mr-6 cursor-pointer hover:text-primary-color transition-colors">
-            Entreprise
-          </li>
-          <li className="ml-6 mr-6 cursor-pointer hover:text-primary-color transition-colors">
-            FAQs
-          </li>
+          {Links &&
+            Links.map(
+              (link) => (
+                (isActive = pathname.startsWith(link.href)),
+                (
+                  <li key={link.href}>
+                    <Link
+                      href={link.href}
+                      className={
+                        isActive
+                          ? "ml-6 mr-6 cursor-pointer text-primary-color hover:text-primary-color transition-colors"
+                          : "text-gray-500 ml-6 mr-6 cursor-pointer hover:text-primary-color transition-colors"
+                      }
+                    >
+                      {link.text}
+                    </Link>
+                  </li>
+                )
+              )
+            )}
         </ul>
         <div className="flex justify-center items-center sm:opacity-0">
           <div className="ml-5 mr-5 flex items-center justify-center cursor-pointer text-primary-color font-bold text-sm transition-colors">
