@@ -7,7 +7,7 @@ import { Logo, Login } from "@/assets";
 const Navbar = () => {
   const Links = [
     { text: "Services", href: "#" },
-    { text: "A propos", href: "#about" },
+    { text: "Entreprise", href: "#" },
     { text: "FAQs", href: "#faqs" },
   ];
 
@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <>
       {/* navbar section  */}
-      <div className="w-full h-10vh flex fixed top-0 bg-transparent items-center justify-between px-11 sm:px-1">
+      <nav className="w-full h-10vh flex fixed top-0 bg-transparent items-center justify-between px-11 sm:px-1">
         <div className=" w-1/5 h-auto -mt-4">
           <Image
             src={Logo}
@@ -66,7 +66,7 @@ const Navbar = () => {
             Inscription
           </button>
         </div>
-      </div>
+      </nav>
     </>
   );
 };
