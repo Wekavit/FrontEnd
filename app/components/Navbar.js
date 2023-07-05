@@ -7,7 +7,7 @@ import { Logo, Login } from "@/assets";
 const Navbar = () => {
   const Links = [
     { text: "Services", href: "#" },
-    { text: "Entreprise", href: "#" },
+    { text: "Entreprise", href: "#about" },
     { text: "FAQs", href: "#faqs" },
   ];
 
@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <>
       {/* navbar section  */}
-      <nav className="w-full h-10vh flex fixed top-0 bg-transparent items-center justify-between px-11 sm:px-1">
+      <div className="w-full h-10vh flex fixed top-0 bg-hero-color items-center justify-between px-11 sm:px-1 pt-4">
         <div className=" w-1/5 h-auto -mt-4">
           <Image
             src={Logo}
@@ -27,7 +27,7 @@ const Navbar = () => {
             draggable={false}
           />
         </div>
-        <ul className="flex justify-center text-black-text font-medium text-sm sm:w-0 sm:opacity-0">
+        <ul className="flex justify-center text-text-dark font-medium text-base sm:w-0 sm:opacity-0">
           {Links &&
             Links.map(
               (link) => (
@@ -66,7 +66,7 @@ const Navbar = () => {
             Inscription
           </button>
         </div>
-      </nav>
+      </div>
     </>
   );
 };
