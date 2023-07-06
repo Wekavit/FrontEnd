@@ -6,14 +6,14 @@ export const Hero = () => {
   return (
     <div className="w-full flex flex-wrap h-89vh mt-11vh">
       {/* text box  */}
-      <div className="w-1/2 pl-17 h-full flex flex-col justify-center mt-8">
+      <div className="w-1/2 pl-28 h-full flex flex-col justify-center mt-8">
         <p className="text-5rem font-black tracking-wide leading-tight text-hero-text mb-6">
           <span className="text-primary-color">Wekavit, </span>epargnez
           juducieusement votre <br />
           argent
         </p>
-        <p className="text-gray-text text-1.2rem font-medium -ml-1 leading-relaxed mb-4 tracking-wide">
-          Wekavit vous aide à atteindre vos objectifs financiers en vous <br />{" "}
+        <p className="text-gray-text text-1.2rem font-normal -ml-1 leading-relaxed mb-4 tracking-wide">
+          Wekavit vous aide à atteindre vos objectifs financiers en vous <br />
           permettant d'épargner et d'investir facilement
         </p>
         <div className="w-full h-auto flex- flex-col -ml-1">
@@ -25,7 +25,7 @@ export const Hero = () => {
             <input
               type="text"
               placeholder="cedrick@gmail.com"
-              className="border-x border-y border-primary-color rounded py-4 px-4 w-2/4 placeholder:text-sm shadow-md shadow-blue-100"
+              className="border-x border-y focus:border-primary-color outline-none border-minimal-color rounded py-4 px-4 w-2/4 placeholder:text-sm shadow-md shadow-blue-100"
             />
             <input
               type="button"

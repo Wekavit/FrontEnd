@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import { Logo, Login } from "@/assets";
+import { Logo, Login, logoMobile } from "@/assets";
 
 const Navbar = () => {
   const Links = [
@@ -17,17 +17,27 @@ const Navbar = () => {
     <>
       {/* navbar section  */}
       <div className="w-full h-10vh flex fixed top-0 bg-hero-color items-center justify-between px-11 sm:px-1 pt-4">
-        <div className=" w-1/5 h-auto -mt-4">
+        <div className="w-1/5 h-auto -mt-4">
           <Image
             src={Logo}
             width={200}
             height={200}
             alt="Avatar wekavit"
-            className="sm:w-2/2 sm:opacity-0 sm:w-0 sm:h-0"
+            className="sm:hidden object-cover"
+            draggable={false}
+          />
+
+          {/* For mobile */}
+          <Image
+            src={logoMobile}
+            width={230}
+            height={230}
+            alt="Avatar wekavit"
+            className="object-cover hidden sm:block"
             draggable={false}
           />
         </div>
-        <ul className="flex justify-center text-text-dark font-medium text-base sm:w-0 sm:opacity-0">
+        <ul className="flex justify-center text-text-dark font-medium text-base sm:hidden">
           {Links &&
             Links.map(
               (link) => (
@@ -49,8 +59,8 @@ const Navbar = () => {
               )
             )}
         </ul>
-        <div className="flex justify-center items-center sm:opacity-0">
-          <div className="ml-5 mr-5 flex items-center justify-center cursor-pointer text-primary-color font-bold text-sm transition-colors">
+        <div className="flex justify-center items-center">
+          <div className="ml-5 mr-5 flex items-center justify-center cursor-pointer text-primary-color font-bold text-sm transition-colors sm:hidden">
             <Image
               src={Login}
               width={20}
@@ -62,7 +72,7 @@ const Navbar = () => {
               Connexion
             </h2>
           </div>
-          <button className="ml-5 mr-5 cursor-pointer bg-primary-color text-white text-sm font-semibold flex items-center justify-center px-8 py-3 rounded-lg shadow-lg shadow-blue-300 hover:-mt-2 hover:transition-all hover:shadow-blue-200 hover:shadow-lg">
+          <button className="ml-5 mr-5 cursor-pointer bg-primary-color text-white text-sm font-semibold flex items-center justify-center px-8 py-3 rounded-lg shadow-lg shadow-blue-300 hover:-mt-2 hover:transition-all hover:shadow-blue-200 hover:shadow-lg sm:hidden">
             Inscription
           </button>
         </div>
