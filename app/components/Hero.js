@@ -14,19 +14,16 @@ export const Hero = () => {
           <input type="text" placeholder="cedrick@gmail.com"  className="border-x border-y outline-none border-primary-color rounded py-4 px-4 w-2/4 placeholder:text-sm shadow-md shadow-blue-100"/>
           <input type="submit" name="" value="Soumettre" id="" className="py-4 px-4 cursor-pointer text-white bg-primary-color rounded-md w-50 ml-2" />
         </form>
-
+      {/* img box  */}
+      <div className="w-1/2 h-full flex items-end justify-start">
+        <Image
+          src={Avatar}
+          width={500}
+          height={1000}
+          alt="woman with a phone in the hand using wekavit"
+          className="w-extra h-extra object-cover -ml-32"
+        />
       </div>
     </div>
-
-    {/* img box  */}
-    <div className="w-1/2 h-full flex items-end justify-start">
-      <Image
-        src={Avatar}
-        width={500}
-        height={1000}
-        alt="woman with a phone in the hand using wekavit"
-        className="w-extra h-extra object-cover -ml-32"
-      />
-    </div>
-  </div>;
+  );
 };

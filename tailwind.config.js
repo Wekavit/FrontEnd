@@ -26,29 +26,30 @@ module.exports = {
       },
       colors: {
         "black-text": " #3C4257",
-        "text-dark" : "rgb(17, 15, 25)",
+        "text-dark": "rgb(17, 15, 25)",
         "border-color": "#EDEDED",
         "primary-color": "#007FFF",
+        "minimal-color": "#0094FF",
         "hero-text": "rgb(50, 48, 60)",
         "gray-text": "#636363",
-        "light-gray" : "rgba(50, 48, 60, 0.611)"
-      }, 
-      // font size 
+        "light-gray": "rgba(50, 48, 60, 0.611)",
+      },
+      // font size
       fontSize: {
-        "xxs": "0.7rem",
+        xxs: "0.7rem",
         "5rem": "3.5rem",
-        "1.2rem": "1.2rem"
+        "1.2rem": "1.2rem",
       },
       // heigth
       height: {
         "10vh": "11vh",
         "89vh": "89vh",
-        "extra" : "90%"
+        extra: "90%",
       },
-      // width 
+      // width
       width: {
-        "50": "11.6rem",
-        "extra" : "200%"
+        50: "11.6rem",
+        extra: "200%",
       },
       // Margin etc...
       margin: {
@@ -56,8 +57,8 @@ module.exports = {
       },
       //padding
       padding: {
-        "17" :"4.5rem"
-      }
+        17: "4.5rem",
+      },
     },
   },
   plugins: [],
