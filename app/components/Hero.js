@@ -11,8 +11,8 @@ export const Hero = () => {
       <div className="w-full h-auto flex- flex-col -ml-1">
         <p className="text-light-gray text-xxs font-semibold mb-3">Rejoignez la liste d'attente pour être le premier à savoir quand nous lançons le produit</p>
         <form className="w-full h-auto flex">
-          <input type="text" placeholder="cedrick@gmail.com"  className="border-x border-y border-primary-color rounded py-4 px-4 w-2/4 placeholder:text-sm shadow-md shadow-blue-100"/>
-          <input type="button" name="" value="Soumettre" id="" className="py-4 px-4 cursor-pointer text-white bg-primary-color rounded-md w-50 ml-2" />
+          <input type="text" placeholder="cedrick@gmail.com"  className="border-x border-y outline-none border-primary-color rounded py-4 px-4 w-2/4 placeholder:text-sm shadow-md shadow-blue-100"/>
+          <input type="submit" name="" value="Soumettre" id="" className="py-4 px-4 cursor-pointer text-white bg-primary-color rounded-md w-50 ml-2" />
         </form>
 
       </div>
