@@ -1,22 +1,33 @@
-import React, { useState, useEffect } from "react";
+"use client";
+
+import React, { useState } from "react";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { Logo, Login, logoMobile } from "@/assets";
+import Burger from "./Burger";
 
 const Navbar = () => {
+  const [open, setOpen] = useState(true);
+
   const Links = [
     { text: "Services", href: "#" },
     { text: "Entreprise", href: "#about" },
-    { text: "FAQs", href: "#faqs" },
+    { text: "FAQs", href: "Faqs" },
+    { text: "Contacter Nous", href: "Contact" },
   ];
 
   const pathname = usePathname();
+
   let isActive;
   return (
     <>
       {/* navbar section  */}
-      <div className="w-full h-10vh flex fixed top-0 bg-hero-color items-center justify-between px-11 sm:px-1 pt-4">
+      <div
+        className={`w-full z-50 h-10vh flex fixed top-0 bg-transparent items-center justify-between px-11 sm:items-center sm:px-1 pt-4 ${
+          open ? "sm:shadow-md sm:bg-white" : ""
+        }`}
+      >
         <div className="w-1/5 h-auto -mt-4">
           <Image
             src={Logo}
@@ -75,6 +86,8 @@ const Navbar = () => {
           <button className="ml-5 mr-5 cursor-pointer bg-primary-color text-white text-sm font-semibold flex items-center justify-center px-8 py-3 rounded-lg shadow-lg shadow-blue-300 hover:-mt-2 hover:transition-all hover:shadow-blue-200 hover:shadow-lg sm:hidden">
             Inscription
           </button>
+
+          <Burger open={open} setOpen={setOpen} />
         </div>
       </div>
     </>

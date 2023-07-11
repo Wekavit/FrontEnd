@@ -4,10 +4,10 @@ import Image from "next/image";
 
 export const Hero = () => {
   return (
-    <div className="w-full flex flex-wrap h-89vh mt-11vh">
+    <div className="w-full flex flex-wrap h-screen sm:hidden">
       {/* text box  */}
       <div className="w-1/2 pl-28 h-full flex flex-col justify-center mt-8">
-        <p className="text-5rem font-black tracking-wide leading-tight text-hero-text mb-6">
+        <p className="text-5rem font-bold tracking-wide leading-tight text-hero-text mb-6">
           <span className="text-primary-color">Wekavit, </span>epargnez
           juducieusement votre <br />
           argent
