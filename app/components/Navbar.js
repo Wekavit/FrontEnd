@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,7 +8,31 @@ import { Logo, Login, logoMobile } from "@/assets";
 import Burger from "./Burger";
 
 const Navbar = () => {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
+  const [change, setChange] = useState(false);
+
+  // Block scroll on menu open
+  if (open) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = null;
+  }
+
+  // Change Navbar style on scroll
+  const controlNavbar = () => {
+    if (window.scrollY > 55) {
+      setChange(true);
+    } else {
+      setChange(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", controlNavbar);
+    return () => {
+      window.removeEventListener("scroll", controlNavbar);
+    };
+  }, []);
 
   const Links = [
     { text: "Services", href: "#" },
@@ -24,8 +48,9 @@ const Navbar = () => {
     <>
       {/* navbar section  */}
       <div
-        className={`w-full z-50 h-10vh flex fixed top-0 bg-transparent items-center justify-between px-11 sm:items-center sm:px-1 pt-4 ${
-          open ? "sm:shadow-md sm:bg-white" : ""
+        className={`w-full z-50 h-11vh transition-all pb-2 duration-300 ease-in-out delay-150 flex fixed top-0 bg-transparent items-center justify-between px-11 sm:items-center sm:px-1 pt-4 ${
+          (open ? "sm:shadow-md sm:bg-white" : "",
+          change ? "bg-white border-b border-gray-200" : "")
         }`}
       >
         <div className="w-1/5 h-auto -mt-4">

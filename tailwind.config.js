@@ -44,17 +44,24 @@ module.exports = {
         xxs: "0.7rem",
         "5rem": "3rem",
         "1.2rem": "1.1rem",
+        "33px": "33px",
+        "35px": "35px",
+        "38px": "38px",
+        "40px": "40px",
+        "45px": "45px",
       },
       // heigth
       height: {
         "2px": "2px",
-        "10vh": "11vh",
+        "11vh": "11vh",
         "89vh": "89vh",
+        350: "350px",
         extra: "90%",
       },
       // width
       width: {
         50: "11.6rem",
+        900: "1500px",
         extra: "200%",
       },
       // Margin etc...

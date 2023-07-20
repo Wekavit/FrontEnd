@@ -8,22 +8,32 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #a3a3a3;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
-    background-color:rgb(17, 15, 25)
+    background-color: rgb(17, 15, 25);
   }
-}
-.bg-image {
-  background-image: url(/assets/images/login.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 50%;
-  height: 100vh;
-  /* background-color: #007fff; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }

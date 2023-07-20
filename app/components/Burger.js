@@ -27,7 +27,7 @@ const Burger = ({ open, setOpen }) => {
 
       {/* Menu */}
       <div
-        className={`hidden sm:flex overflow-y-scroll overflow-x-hidden fixed h-extra bg-hero-color py-5 px-6 w-full top-16 left-0 z-30 transition-all ease-in-out delay-150 ${
+        className={`hidden sm:flex overflow-y-scroll overflow-x-hidden fixed h-extra bg-hero-color py-5 px-6 w-full top-20 left-0 z-30 transition-all ease-in-out delay-150 ${
           open ? "translate-x-0" : "-translate-x-full"
         }`}
       >

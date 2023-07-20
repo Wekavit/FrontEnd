@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { HiOutlineChevronDown, HiOutlineChevronUp } from "react-icons/hi";
+import { HiOutlineChevronDown } from "react-icons/hi";
 
 // Icons
 import { PersonnelWallet, Collaboratif, Collectif, Individual } from "@/assets";
+// import { PersonnelWallet } from "@/assets";
 
 const Menu = () => {
   const [services, setServices] = useState(false);
-  const [about, setAbout] = useState(false);
   const [contact, setContact] = useState(false);
 
   return (
@@ -139,7 +139,7 @@ const Menu = () => {
         ) : null}
 
         <Link href="Connexion">
-          <div className="w-11/12 ml-2 mt-8 p-2 text-center text-primary-color rounded-lg border-2 text-base border-primary-color">
+          <div className="w-11/12 ml-2 mt-8 p-2 text-center text-primary-color rounded-lg border text-base border-primary-color">
             Connexion
           </div>
         </Link>
