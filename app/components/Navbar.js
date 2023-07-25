@@ -6,10 +6,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { Logo, Login, logoMobile } from "@/assets";
 import Burger from "./Burger";
+import ServiceMenu from "./ServiceMenu";
+import ContactMenu from "./ContactMenu";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [change, setChange] = useState(false);
+  const [service, setService] = useState(false);
+  const [contact, setContact] = useState(false);
 
   // Block scroll on menu open
   if (open) {
@@ -36,9 +40,9 @@ const Navbar = () => {
 
   const Links = [
     { text: "Services", href: "#" },
-    { text: "Entreprise", href: "#about" },
+    { text: "Entreprise", href: "/about" },
     { text: "FAQs", href: "Faqs" },
-    { text: "Contacter Nous", href: "Contact" },
+    { text: "Contacter nous", href: "Contact" },
   ];
 
   const pathname = usePathname();
@@ -48,8 +52,8 @@ const Navbar = () => {
     <>
       {/* navbar section  */}
       <div
-        className={`w-full z-50 h-11vh transition-all pb-2 duration-300 ease-in-out delay-150 flex fixed top-0 bg-transparent items-center justify-between px-11 sm:items-center sm:px-1 pt-4 ${
-          (open ? "sm:shadow-md sm:bg-white" : "",
+        className={`w-full z-50 h-11vh transition-all pb-2 duration-300 ease-in-out delay-150 flex fixed top-0 bg-transparent items-center justify-between px-11 sm:items-center sm:px-1 md:items-center md:bg-red md:px-16 pt-4 ${
+          (open ? "sm:shadow-md md:shadow-md sm:bg-white md:bg-white" : "",
           change ? "bg-white border-b border-gray-200" : "")
         }`}
       >
@@ -73,7 +77,7 @@ const Navbar = () => {
             draggable={false}
           />
         </div>
-        <ul className="flex justify-center text-text-dark font-medium text-base sm:hidden">
+        <ul className="flex justify-center text-text-dark font-medium text-base sm:hidden md:hidden">
           {Links &&
             Links.map(
               (link) => (
@@ -82,11 +86,19 @@ const Navbar = () => {
                   <li key={link.href}>
                     <Link
                       href={link.href}
-                      className={
-                        isActive
-                          ? "ml-6 mr-6 cursor-pointer text-primary-color hover:text-primary-color transition-colors"
-                          : "text-gray-500 ml-6 mr-6 cursor-pointer hover:text-primary-color transition-colors"
-                      }
+                      onMouseEnter={() => {
+                        link.text === "Services" ? setService(true) : null;
+                        link.text === "Contacter nous"
+                          ? setContact(true)
+                          : null;
+                      }}
+                      className={`cursor-pointer mr-6 py-4 hover:text-primary-color transition-all duration-700 ease-in-out delay-150
+                        ${
+                          isActive
+                            ? "ml-6 text-primary-color  transition-colors"
+                            : "text-gray-500 ml-6 transition-colors"
+                        }
+                      `}
                     >
                       {link.text}
                     </Link>
@@ -96,7 +108,7 @@ const Navbar = () => {
             )}
         </ul>
         <div className="flex justify-center items-center">
-          <div className="ml-5 mr-5 flex items-center justify-center cursor-pointer text-primary-color font-bold text-sm transition-colors sm:hidden">
+          <div className="ml-5 mr-5 flex items-center justify-center cursor-pointer text-primary-color font-bold text-sm transition-colors sm:hidden md:hidden">
             <Image
               src={Login}
               width={20}
@@ -108,13 +120,24 @@ const Navbar = () => {
               Connexion
             </h2>
           </div>
-          <button className="ml-5 mr-5 cursor-pointer bg-primary-color text-white text-sm font-semibold flex items-center justify-center px-8 py-3 rounded-lg shadow-lg shadow-blue-300 hover:-mt-2 hover:transition-all hover:shadow-blue-200 hover:shadow-lg sm:hidden">
+          <button className="ml-5 mr-5 cursor-pointer bg-primary-color text-white text-sm font-semibold flex items-center justify-center px-8 py-3 rounded-lg shadow-lg shadow-blue-300 hover:-mt-2 hover:transition-all hover:shadow-blue-200 hover:shadow-lg sm:hidden md:hidden">
             Inscription
           </button>
 
           <Burger open={open} setOpen={setOpen} />
         </div>
       </div>
+
+      <ServiceMenu
+        service={service}
+        setService={setService}
+        setContact={setContact}
+      />
+      <ContactMenu
+        contact={contact}
+        setContact={setContact}
+        setService={setService}
+      />
     </>
   );
 };

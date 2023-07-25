@@ -7,9 +7,14 @@ import { HiOutlineChevronDown } from "react-icons/hi";
 import { PersonnelWallet, Collaboratif, Collectif, Individual } from "@/assets";
 // import { PersonnelWallet } from "@/assets";
 
-const Menu = () => {
+const Menu = ({ open, setOpen }) => {
   const [services, setServices] = useState(false);
   const [contact, setContact] = useState(false);
+
+  const phoneNumber = "tel:+25768887091";
+  const whatsapp = "https://wa.me/68887091";
+  const mail =
+    "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=cedricklupembe91@gmail.com";
 
   return (
     <>
@@ -92,13 +97,13 @@ const Menu = () => {
           </div>
         ) : null}
 
-        <Link href="/company">
+        <Link href="/about" onClick={() => setOpen(!open)}>
           <li className="w-full pl-2 pr-5 flex items-center justify-between py-5  text-base font-medium">
             <span>Entreprise</span>
           </li>
         </Link>
 
-        <Link href="/faq">
+        <Link href="/faq" onClick={() => setOpen(!open)}>
           <li className="w-full pl-2 pr-5 flex items-center justify-between py-5  text-base font-medium">
             FAQs
           </li>
@@ -122,14 +127,14 @@ const Menu = () => {
           <div className="w-full text-primary-color h-auto rounded p-5 transition-all duration-700 ease-in-out delay-150">
             <ul className="w-full h-full">
               <li className="w-full pl-2 pr-5 flex items-center justify-start gap-5 py-3 text-sm">
-                <Link href="tel:+25768887091">+25768887091</Link>
+                <Link href={phoneNumber}>+25768887091</Link>
               </li>
 
               <li className="w-full pl-2 pr-5 flex items-center justify-start gap-5 py-3 text-sm">
-                <Link href="https://wa.me/68887091">WhatsApp</Link>
+                <Link href={whatsapp}>WhatsApp</Link>
               </li>
 
-              <Link href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=cedricklupembe91@gmail.com">
+              <Link href={mail}>
                 <li className="w-full pl-2 pr-5 flex items-center justify-start gap-5 py-3 text-sm">
                   <span>Message</span>
                 </li>

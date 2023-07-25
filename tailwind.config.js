@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     screens: {
       sm: { min: "0px", max: "600px" },
-      md: { min: "601px", max: "768px" },
+      md: { min: "601px", max: "890px" },
       lg: { min: "769px", max: "992px" },
       xl: { min: "993px", max: "1280px" },
       "2xl": { min: "1536px" },
@@ -30,12 +30,21 @@ module.exports = {
         "border-color": "#EDEDED",
         "primary-color": "#007FFF",
         "minimal-color": "#0094FF",
+        "title-color": "#3C4257",
         mainbrand: "#000B4D",
         "hero-text": "rgb(50, 48, 60)",
         "gray-text": "#636363",
         "light-gray": "rgba(50, 48, 60, 0.611)",
+        "hover-service": "rgba(245, 243, 243, 1)",
         "blue-mobileMenuBtn": "rgba(0, 127, 255, 0.1)",
-        "orange-mobileMenuBtn": "rgba(243, 171, 63, 0.1)",
+        "blue-mobileMenuBtn": "rgba(0, 127, 255, 0.1)",
+        "blue-small": "rgba(0, 148, 255, 0.5)",
+
+        "wallet-icon": "rgba(0, 148, 255, 0.2)",
+        "collectif-icon": "rgba(250, 151, 3, 0.1)",
+        "individuel-icon": "rgba(24, 157, 21, 0.1)",
+        "collaboratif-icon": "rgba(175, 55, 156, 0.1)",
+
         "green-mobileMenuBtn": "rgba(24, 157, 21, 0.1)",
         "pink-mobileMenuBtn": "rgba(195, 86, 178, 0.1)",
       },
@@ -49,7 +58,16 @@ module.exports = {
         "38px": "38px",
         "40px": "40px",
         "45px": "45px",
+        "12px": "12px",
       },
+
+      // Spacing top/bottom/left/right
+      spacing: {
+        "12vh": "10vh",
+        "15%": "15%",
+        "45%": "45%",
+      },
+
       // heigth
       height: {
         "2px": "2px",
@@ -57,12 +75,14 @@ module.exports = {
         "89vh": "89vh",
         350: "350px",
         extra: "90%",
+        "30%": "30%",
       },
       // width
       width: {
         50: "11.6rem",
         900: "1500px",
         extra: "200%",
+        "45%": "45%",
       },
       // Margin etc...
       margin: {

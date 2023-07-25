@@ -5,7 +5,7 @@ const Burger = ({ open, setOpen }) => {
   return (
     <>
       <div
-        className="hidden relative w-6 cursor-pointer z-50 h-5 sm:flex flex-col justify-around -top-2 mr-5"
+        className="hidden relative w-6 cursor-pointer z-50 h-5 sm:flex md:flex flex-col justify-around -top-2 mr-5"
         onClick={() => setOpen(!open)}
       >
         <span
@@ -31,7 +31,7 @@ const Burger = ({ open, setOpen }) => {
           open ? "translate-x-0" : "-translate-x-full"
         }`}
       >
-        <Menu />
+        <Menu open={open} setOpen={setOpen} />
       </div>
     </>
   );
