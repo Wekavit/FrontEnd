@@ -16,6 +16,11 @@ import CollectifIcon from "../assets/images/landing/Collectif-icon.svg";
 import PersonnalWallet from "../assets/images/landing/Personnel-Wallet-icon.svg";
 import IndividualBank from "../assets/images/landing/Individuel-PiggyBank-icon.svg";
 
+// About
+import SocialImage from "../assets/images/landing/about-hero.svg";
+import StickImage from "../assets/images/landing/stick.svg";
+import cedProfile from "../assets/images/landing/ced-profil.jpg";
+
 export {
   Logo,
   Login,
@@ -32,4 +37,9 @@ export {
   CollectifIcon,
   PersonnalWallet,
   IndividualBank,
+
+  // About
+  SocialImage,
+  StickImage,
+  cedProfile,
 };

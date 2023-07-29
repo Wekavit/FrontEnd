@@ -87,6 +87,7 @@ module.exports = {
       // Margin etc...
       margin: {
         "11vh": "11vh",
+        "12vh": "12vh",
       },
       //padding
       padding: {
@@ -97,6 +98,11 @@ module.exports = {
       translate: {
         "11px": "11px",
         "4px": "4px",
+      },
+
+      lineHeight: {
+        "extra-loose": "2.5",
+        36: "45px",
       },
     },
   },
