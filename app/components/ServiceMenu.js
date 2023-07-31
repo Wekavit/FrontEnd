@@ -23,7 +23,7 @@ const ServiceMenu = ({ service, setService, setContact }) => {
     >
       {/* personnel */}
       <Link
-        href="#"
+        href="personal"
         className="w-45% h-20 transition-all duration-700 ease-in-out delay-150 hover:bg-hover-service flex gap-3 items-center px-5 rounded-lg"
       >
         <div className="px-3 py-4 bg-wallet-icon rounded-full">

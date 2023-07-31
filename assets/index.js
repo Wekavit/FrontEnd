@@ -21,6 +21,9 @@ import SocialImage from "../assets/images/landing/hero-about.png";
 import StickImage from "../assets/images/landing/stick.svg";
 import cedProfile from "../assets/images/landing/ced-profil.jpg";
 
+// Personnal
+import MockupOne from "../assets/images/landing/Mock-personal.png";
+
 export {
   Logo,
   Login,
@@ -42,4 +45,7 @@ export {
   SocialImage,
   StickImage,
   cedProfile,
+
+  // Personnal
+  MockupOne,
 };
