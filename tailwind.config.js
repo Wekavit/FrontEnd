@@ -47,6 +47,7 @@ module.exports = {
 
         "green-mobileMenuBtn": "rgba(24, 157, 21, 0.1)",
         "pink-mobileMenuBtn": "rgba(195, 86, 178, 0.1)",
+        borderColor: "#E2E8F0",
       },
       // font size
       fontSize: {
@@ -83,6 +84,8 @@ module.exports = {
         900: "1500px",
         extra: "200%",
         "45%": "45%",
+        "22%": "22%",
+        "25%": "25%",
       },
       // Margin etc...
       margin: {

@@ -58,24 +58,28 @@ const Navbar = () => {
         }`}
       >
         <div className="w-1/5 h-auto -mt-4">
-          <Image
-            src={Logo}
-            width={200}
-            height={200}
-            alt="Avatar wekavit"
-            className="sm:hidden object-cover"
-            draggable={false}
-          />
+          <Link href="">
+            <Image
+              src={Logo}
+              width={200}
+              height={200}
+              alt="Avatar wekavit"
+              className="sm:hidden object-cover"
+              draggable={false}
+            />
+          </Link>
 
           {/* For mobile */}
-          <Image
-            src={logoMobile}
-            width={230}
-            height={230}
-            alt="Avatar wekavit"
-            className="object-cover hidden sm:block"
-            draggable={false}
-          />
+          <Link href="">
+            <Image
+              src={logoMobile}
+              width={230}
+              height={230}
+              alt="Avatar wekavit"
+              className="object-cover hidden sm:block"
+              draggable={false}
+            />
+          </Link>
         </div>
         <ul className="flex justify-center text-text-dark font-medium text-base sm:hidden md:hidden">
           {Links &&
