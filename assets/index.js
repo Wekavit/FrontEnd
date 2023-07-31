@@ -17,7 +17,7 @@ import PersonnalWallet from "../assets/images/landing/Personnel-Wallet-icon.svg"
 import IndividualBank from "../assets/images/landing/Individuel-PiggyBank-icon.svg";
 
 // About
-import SocialImage from "../assets/images/landing/about-hero.svg";
+import SocialImage from "../assets/images/landing/hero-about.png";
 import StickImage from "../assets/images/landing/stick.svg";
 import cedProfile from "../assets/images/landing/ced-profil.jpg";
 

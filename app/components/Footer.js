@@ -50,7 +50,7 @@ const Footer = () => {
         {/* services */}
         <div className="w-22% h-auto p-2 pl-10 relative overflow-hidden sm:w-full sm:p-2 md:w-full md:p-2 md:mt-3">
           <h3 className=" font-semibold">Entreprise</h3>
-          <ul className="flex flex-col gap-5 mt-5">
+          <ul className="flex flex-col gap-5 mt-5 sm:text-sm">
             <Link href="">
               <li>A propos</li>
             </Link>
@@ -66,7 +66,7 @@ const Footer = () => {
         {/* aide */}
         <div className="w-22% h-auto p-2 relative overflow-hidden sm:w-full md:w-full">
           <h3 className=" font-semibold">AIDE</h3>
-          <ul className="flex flex-col gap-5 mt-5">
+          <ul className="flex flex-col gap-5 mt-5 sm:text-sm">
             <Link href="">
               <li>Assistance</li>
             </Link>
@@ -79,7 +79,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* aide */}
+        {/* newsletter */}
         <div className="w-22% h-auto p-2 relative flex flex-col gap-5 -mt-16 overflow-hidden sm:w-full sm:mt-1 md:w-full md:mt-1">
           <h3 className=" font-semibold">NEWSLETTER</h3>
           <Link

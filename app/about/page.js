@@ -28,7 +28,7 @@ const page = () => {
         <div className="w-2/4 h-full flex justify-center items-center sm:w-full sm:h-auto md:w-full md:h-auto md:mt-3">
           <Image
             src={SocialImage}
-            className="w-96 h-full sm:w-64"
+            className=" w-auto h-full sm:w-64 object-cover"
             alt="Image friends"
           />
         </div>
