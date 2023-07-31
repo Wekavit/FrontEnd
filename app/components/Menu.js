@@ -4,7 +4,12 @@ import Link from "next/link";
 import { HiOutlineChevronDown } from "react-icons/hi";
 
 // Icons
-import { PersonnelWallet, Collaboratif, Collectif, Individual } from "@/assets";
+import {
+  CollaboratifIcon,
+  CollectifIcon,
+  PersonnalWallet,
+  IndividualBank,
+} from "@/assets";
 // import { PersonnelWallet } from "@/assets";
 
 const Menu = ({ open, setOpen }) => {
@@ -42,7 +47,7 @@ const Menu = ({ open, setOpen }) => {
                 <li className="w-full pl-2 pr-5 flex items-center justify-start gap-5 py-3 text-sm">
                   <span className="p-3 bg-blue-mobileMenuBtn rounded-lg">
                     <Image
-                      src={PersonnelWallet}
+                      src={PersonnalWallet}
                       alt="Personal wallet link"
                       width={16}
                       height={16}
@@ -56,7 +61,7 @@ const Menu = ({ open, setOpen }) => {
                 <li className="w-full pl-2 pr-5 flex items-center justify-start gap-5 py-3 text-sm">
                   <span className="px-3 py-2 bg-orange-mobileMenuBtn rounded-lg">
                     <Image
-                      src={Collectif}
+                      src={CollectifIcon}
                       alt="lock group saving link"
                       width={15}
                       height={15}
@@ -70,7 +75,7 @@ const Menu = ({ open, setOpen }) => {
                 <li className="w-full pl-2 pr-5 flex items-center justify-start gap-5 py-3 text-sm">
                   <span className="p-3 bg-green-mobileMenuBtn rounded-lg">
                     <Image
-                      src={Individual}
+                      src={IndividualBank}
                       alt="Individual finance link"
                       width={15}
                       height={15}
@@ -84,7 +89,7 @@ const Menu = ({ open, setOpen }) => {
                 <li className="w-full pl-2 pr-5 flex items-center justify-start gap-5 py-3 text-sm">
                   <span className="p-3 bg-pink-mobileMenuBtn rounded-lg">
                     <Image
-                      src={Collaboratif}
+                      src={CollaboratifIcon}
                       alt="Collaboratif finance link"
                       width={15}
                       height={15}

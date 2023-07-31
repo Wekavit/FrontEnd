@@ -24,7 +24,7 @@ const Navbar = () => {
 
   // Change Navbar style on scroll
   const controlNavbar = () => {
-    if (window.scrollY > 55) {
+    if (window.scrollY > 20) {
       setChange(true);
     } else {
       setChange(false);
@@ -52,7 +52,7 @@ const Navbar = () => {
     <>
       {/* navbar section  */}
       <div
-        className={`w-full z-50 h-11vh transition-all pb-2 duration-300 ease-in-out delay-150 flex fixed top-0 bg-transparent items-center justify-between px-11 sm:items-center sm:px-1 md:items-center md:bg-red md:px-16 pt-4 ${
+        className={`w-full z-50 h-11vh transition-all pb-2 duration-200 ease-in-out delay-150 flex fixed top-0 bg-transparent items-center justify-between px-11 sm:items-center sm:px-1 md:items-center md:bg-red md:px-16 pt-4 ${
           (open ? "sm:shadow-md md:shadow-md sm:bg-white md:bg-white" : "",
           change ? "bg-white border-b border-gray-200" : "")
         }`}
