@@ -48,6 +48,12 @@ module.exports = {
         "green-mobileMenuBtn": "rgba(24, 157, 21, 0.1)",
         "pink-mobileMenuBtn": "rgba(195, 86, 178, 0.1)",
         borderColor: "#E2E8F0",
+
+        // Personnal saving plan
+        blueColor: "#040052",
+        bluelight: "#5A50FE",
+        blueMedium: "#423BBF",
+        blueMain: "#007FFF",
       },
       // font size
       fontSize: {
@@ -57,9 +63,11 @@ module.exports = {
         "33px": "33px",
         "35px": "35px",
         "38px": "38px",
+        29: "29px",
         "40px": "40px",
         "45px": "45px",
         "12px": "12px",
+        "44px": "44px",
       },
 
       // Spacing top/bottom/left/right
@@ -77,6 +85,7 @@ module.exports = {
         350: "350px",
         extra: "90%",
         "30%": "30%",
+        "500px": "500px",
       },
       // width
       width: {
@@ -87,6 +96,9 @@ module.exports = {
         "22%": "22%",
         "25%": "25%",
         "60%": "60%",
+        "30%": "33%",
+        "90%": "90%",
+        785: "1024px",
       },
       // Margin etc...
       margin: {

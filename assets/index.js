@@ -22,7 +22,9 @@ import StickImage from "../assets/images/landing/stick.svg";
 import cedProfile from "../assets/images/landing/ced-profil.jpg";
 
 // Personnal
-import MockupOne from "../assets/images/landing/Mock-personal.png";
+import MockupOne from "../assets/images/landing/Mock-personal.svg";
+import shapPersonal from "../assets/images/landing/shapPersonnal.svg";
+import GirlsBanner from "../assets/images/landing/girlsBanner.svg";
 
 export {
   Logo,
@@ -48,4 +50,6 @@ export {
 
   // Personnal
   MockupOne,
+  shapPersonal,
+  GirlsBanner,
 };

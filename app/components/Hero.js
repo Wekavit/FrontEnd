@@ -8,6 +8,7 @@ import {
   handwriterBack,
 } from "@/assets";
 import Image from "next/image";
+import { HiArrowLongRight } from "react-icons/hi2";
 
 export const Hero = () => {
   const Newsletters = "https://tally.so/r/mY0jj0";
@@ -17,31 +18,25 @@ export const Hero = () => {
     <div className="w-full flex flex-wrap h-89vh mt-11vh">
       {/* text box  */}
       <div className="w-1/2 pl-17 h-full flex flex-col justify-center mt-8 sm:w-full md:w-full sm:h-auto md:h-auto md:py-8 md:px-20 sm:p-5">
-        <p className="text-5xl font-bold leading-tight text-hero-text mb-6 sm:text-35px sm:tracking-normal">
-          <span className="text-primary-color">Wekavit, </span>epargnez
-          juducieusement votre <br className="sm:hidden" />
-          argent
+        <p className="text-44px font-bold leading-tight text-hero-text mb-6 sm:text-35px sm:tracking-normal">
+          La façon moderne d'épargner et d'investir votre argent
         </p>
         <p className="text-gray-text text-1.2rem font-normal sm:font-normal leading-relaxed mb-6 sm:leading-normal sm:-tracking-normal">
-          Avec wekavit construisez votre avenir financier et tracer la voie vers
-          votre meilleure vie. <br />
+          Economisez et investissez votre argent en toute simplicité en
+          commençant par aussi peu que 500 franc. Gagnez des intérêts de 9 à 11
+          %.
         </p>
-        <div className="w-full h-auto flex flex-col">
-          <p className="text-light-gray text-xxs font-semibold mb-3">
-            Rejoignez la liste d'attente pour être le premier à savoir quand
-            nous lançons le produit
-          </p>
-        </div>
 
-        <div className="w-full flex h-auto mt-2 sm:flex-col relative">
-          <Link href={Newsletters}>
-            <div className="w-auto py-4 px-4 justify-center items-center font-medium cursor-pointer text-white bg-primary-color rounded-md sm:justify-center sm:text-center sm:w-full sm:mt-2 sm:ml-0">
+        <div className="w-full flex h-auto mt-1 sm:flex-col relative">
+          <Link
+            href={Newsletters}
+            className="duration-300 rounded-lg shadow-lg shadow-blue-300"
+          >
+            <div className="w-auto flex gap-4 py-3 px-4 justify-center items-center font-medium cursor-pointer text-white bg-primary-color rounded-md hover:transition-all hover:shadow-blue-200 hover:shadow-lg sm:justify-center sm:text-center sm:w-full sm:mt-2 sm:ml-0">
               <p>Rejoindre la liste d’attente</p>
-            </div>
-          </Link>
-          <Link href={WhatsApp}>
-            <div className="w-auto p-5 flex justify-center items-center font-medium">
-              <p>Laissez nous un message</p>
+              <span className="text-lg">
+                <HiArrowLongRight />
+              </span>
             </div>
           </Link>
         </div>
