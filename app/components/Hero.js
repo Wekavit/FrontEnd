@@ -14,7 +14,7 @@ export const Hero = () => {
   const WhatsApp = "https://wa.me/68887091";
 
   return (
-    <div className="w-full flex flex-wrap h-89vh mt-11vh">
+    <div className="w-full flex flex-wrap h-93vh mt-11vh">
       {/* text box  */}
       <div className="w-1/2 pl-17 h-full flex flex-col justify-center mt-8 sm:w-full md:w-full sm:h-auto md:h-auto md:py-8 md:px-20 sm:p-5">
         <p className="text-5xl font-bold leading-tight text-hero-text mb-6 sm:text-35px sm:tracking-normal">
@@ -53,7 +53,7 @@ export const Hero = () => {
           width={500}
           height={1000}
           alt="woman with a phone in the hand using wekavit"
-          className="w-extra h-extra -ml-32 object-cover sm:w-full md:w-full sm:h-350 md:h-auto sm:-ml-6 z-10"
+          className="w-extra h-extra -ml-32 object-cover sm:w-full sm:-mt-2 md:w-full sm:h-350 md:-mt-16 md:h-auto sm:-ml-11 z-10"
           draggable={false}
         />
         <Image
