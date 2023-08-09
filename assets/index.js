@@ -26,6 +26,17 @@ import MockupOne from "../assets/images/landing/Mock-personal.svg";
 import shapPersonal from "../assets/images/landing/shapPersonnal.svg";
 import GirlsBanner from "../assets/images/landing/girlsBanner.svg";
 
+// Groupe saving
+import GroupeSaving from "../assets/images/landing/groupe-savingOne.svg";
+import GroupSavingTwo from "../assets/images/landing/groupeSaving-two.svg";
+import DepositIcon from "../assets/images/landing/icons-group-saving/Money-Bag.svg";
+import GoalIcon from "../assets/images/landing/icons-group-saving/Archery-1.svg";
+import MoneyPay from "../assets/images/landing/icons-group-saving/Cash-Payment.svg";
+import LockIcon from "../assets/images/landing/icons-group-saving/Lock-1.svg";
+
+// Invest alone
+import MockupScreen from "../assets/images/landing/invest-mock-one.svg";
+
 export {
   Logo,
   Login,
@@ -52,4 +63,15 @@ export {
   MockupOne,
   shapPersonal,
   GirlsBanner,
+
+  // Group saving
+  GroupeSaving,
+  GroupSavingTwo,
+  DepositIcon,
+  GoalIcon,
+  MoneyPay,
+  LockIcon,
+
+  // Invest Alone
+  MockupScreen,
 };

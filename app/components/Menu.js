@@ -43,7 +43,7 @@ const Menu = ({ open, setOpen }) => {
         {services ? (
           <div className="w-full h-auto rounded p-5 transition-all duration-700 ease-in-out delay-150">
             <ul className="w-full h-full">
-              <Link href="/Personnel">
+              <Link href="/personal" onClick={() => setOpen(!open)}>
                 <li className="w-full pl-2 pr-5 flex items-center justify-start gap-5 py-3 text-sm">
                   <span className="p-3 bg-blue-mobileMenuBtn rounded-lg">
                     <Image
@@ -57,7 +57,7 @@ const Menu = ({ open, setOpen }) => {
                 </li>
               </Link>
 
-              <Link href="/Collectif">
+              <Link href="/collective" onClick={() => setOpen(!open)}>
                 <li className="w-full pl-2 pr-5 flex items-center justify-start gap-5 py-3 text-sm">
                   <span className="px-3 py-2 bg-orange-mobileMenuBtn rounded-lg">
                     <Image
@@ -71,7 +71,7 @@ const Menu = ({ open, setOpen }) => {
                 </li>
               </Link>
 
-              <Link href="/Individual">
+              <Link href="/Individual" onClick={() => setOpen(!open)}>
                 <li className="w-full pl-2 pr-5 flex items-center justify-start gap-5 py-3 text-sm">
                   <span className="p-3 bg-green-mobileMenuBtn rounded-lg">
                     <Image
@@ -85,7 +85,7 @@ const Menu = ({ open, setOpen }) => {
                 </li>
               </Link>
 
-              <Link href="/Collaboratif">
+              <Link href="/Collaboratif" onClick={() => setOpen(!open)}>
                 <li className="w-full pl-2 pr-5 flex items-center justify-start gap-5 py-3 text-sm">
                   <span className="p-3 bg-pink-mobileMenuBtn rounded-lg">
                     <Image
@@ -148,11 +148,6 @@ const Menu = ({ open, setOpen }) => {
           </div>
         ) : null}
 
-        <Link href="Connexion">
-          <div className="w-11/12 ml-2 mt-8 p-2 text-center text-primary-color rounded-lg border text-base border-primary-color">
-            Connexion
-          </div>
-        </Link>
         <Link href="/Inscription">
           <div className="w-11/12 ml-2 mt-3 p-2 text-center text-base bg-primary-color text-white rounded-lg border-2 border-primary-color">
             S'inscrire

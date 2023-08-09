@@ -42,7 +42,7 @@ const ServiceMenu = ({ service, setService, setContact }) => {
 
       {/* Groupe */}
       <Link
-        href="#"
+        href="/collective"
         onClick={() => setService(false)}
         className="w-45% h-20 flex gap-3 items-center px-5 rounded-lg transition-all duration-700 ease-in-out delay-150 hover:bg-hover-service"
       >
@@ -55,13 +55,13 @@ const ServiceMenu = ({ service, setService, setContact }) => {
         </div>
         <div>
           <h3 className=" font-semibold text-title-color">Collectif</h3>
-          <p className="text-12px text-gray-text">Epargne collectif</p>
+          <p className="text-12px text-gray-text">Epargne en groupe</p>
         </div>
       </Link>
 
       {/* Individuel */}
       <Link
-        href="#"
+        href="/finance"
         onClick={() => setService(false)}
         className="w-45% h-20 flex gap-3 items-center px-5 rounded-lg transition-all duration-700 ease-in-out delay-150 hover:bg-hover-service"
       >

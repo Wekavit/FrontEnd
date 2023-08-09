@@ -58,7 +58,7 @@ const Navbar = () => {
         }`}
       >
         <div className="w-1/5 h-auto -mt-4">
-          <Link href="">
+          <Link href="/">
             <Image
               src={Logo}
               width={200}
@@ -70,7 +70,7 @@ const Navbar = () => {
           </Link>
 
           {/* For mobile */}
-          <Link href="">
+          <Link href="/">
             <Image
               src={logoMobile}
               width={230}
@@ -96,7 +96,7 @@ const Navbar = () => {
                           ? setContact(true)
                           : null;
                       }}
-                      className={`cursor-pointer mr-6 py-4 hover:text-primary-color transition-all duration-700 ease-in-out delay-150
+                      className={`cursor-pointer mr-4 py-4 hover:text-primary-color transition-all duration-700 ease-in-out delay-150
                         ${
                           isActive
                             ? "ml-6 text-primary-color  transition-colors"

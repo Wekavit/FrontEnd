@@ -18,21 +18,24 @@ export const Hero = () => {
     <div className="w-full flex flex-wrap h-89vh mt-11vh">
       {/* text box  */}
       <div className="w-1/2 pl-17 h-full flex flex-col justify-center mt-8 sm:w-full md:w-full sm:h-auto md:h-auto md:py-8 md:px-20 sm:p-5">
-        <p className="text-44px font-bold leading-tight text-hero-text mb-6 sm:text-35px sm:tracking-normal">
+        <h1 className="text-44px tracking-tighter font-bold text-hero-text leading-tight mb-6 sm:text-35px sm:leading-tight sm:text-3xl">
           La façon moderne d'épargner et d'investir votre argent
-        </p>
-        <p className="text-gray-text text-1.2rem font-normal sm:font-normal leading-relaxed mb-6 sm:leading-normal sm:-tracking-normal">
+        </h1>
+        <p className="text-gray-text text-1.2rem font-normal sm:font-normal leading-relaxed mb-6 sm:leading-normal sm:-tracking-normal sm:text-sm">
           Economisez et investissez votre argent en toute simplicité en
           commençant par aussi peu que 500 franc. Gagnez des intérêts de 9 à 11
           %.
         </p>
 
-        <div className="w-full flex h-auto mt-1 sm:flex-col relative">
+        <div className="w-full flex flex-col h-auto mt-1 sm:flex-col relative">
+          <span className="mb-2 text-xs font-semibold sm:text-xs sm:text-10px">
+            Plus tôt vous vous inscrivez, plus tôt vous aurez accès
+          </span>
           <Link
             href={Newsletters}
-            className="duration-300 rounded-lg shadow-lg shadow-blue-300"
+            className="w-2/3 duration-300 rounded-lg shadow-lg shadow-blue-300 sm:w-10/12"
           >
-            <div className="w-auto flex gap-4 py-3 px-4 justify-center items-center font-medium cursor-pointer text-white bg-primary-color rounded-md hover:transition-all hover:shadow-blue-200 hover:shadow-lg sm:justify-center sm:text-center sm:w-full sm:mt-2 sm:ml-0">
+            <div className="flex gap-4 py-3 px-4 justify-center items-center font-medium cursor-pointer text-white bg-primary-color rounded-md hover:transition-all hover:shadow-blue-200 hover:shadow-lg sm:justify-center sm:text-center sm:w-full sm:mt-2 sm:ml-0 sm:text-sm">
               <p>Rejoindre la liste d’attente</p>
               <span className="text-lg">
                 <HiArrowLongRight />
@@ -86,5 +89,7 @@ export const Hero = () => {
         />
       </div>
     </div>
+
+    // text-44px font-bold leading-tight text-hero-text mb-6 sm:text-35px sm:tracking-normal sm:text-4xl sm:leading-tight
   );
 };
