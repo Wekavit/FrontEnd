@@ -15,7 +15,7 @@ export const Hero = () => {
   const WhatsApp = "https://wa.me/68887091";
 
   return (
-    <div className="w-full flex flex-wrap h-89vh mt-11vh">
+    <div className="w-full flex flex-wrap h-89vh mt-11vh sm:h-auto md:h-auto overflow-hidden">
       {/* text box  */}
       <div className="w-1/2 pl-17 h-full flex flex-col justify-center mt-8 sm:w-full md:w-full sm:h-auto md:h-auto md:py-8 md:px-20 sm:p-5">
         <h1 className="text-44px tracking-tighter font-bold text-hero-text leading-tight mb-6 sm:text-35px sm:leading-tight sm:text-3xl">
@@ -45,13 +45,11 @@ export const Hero = () => {
         </div>
       </div>
       {/* img box  */}
-      <div className="w-1/2 relative h-full flex items-end justify-center mt-8 sm:flex-col md:flex-col md:w-full sm:w-full sm:pt-5 sm:justify-center md:justify-center sm:items-center md:items-center sm:h-auto md:h-auto">
+      <div className="w-1/2 relative h-full flex items-end justify-center mt-8 sm:flex-col sm:mt-0 sm:h-auto md:flex-col md:w-full sm:w-full sm:pt-5 sm:justify-center md:justify-center sm:items-center md:items-center md:h-auto">
         <Image
           src={Avatar}
-          width={500}
-          height={1000}
           alt="woman with a phone in the hand using wekavit"
-          className="w-extra h-extra -ml-32 object-cover sm:w-full md:w-full sm:h-350 md:h-auto sm:-ml-6 z-10"
+          className="w-auto h-extra -ml-32 object-cover sm:w-auto sm:h-80 md:w-auto md:h-96 sm:-ml-6 z-10"
           draggable={false}
         />
         <Image
@@ -84,12 +82,10 @@ export const Hero = () => {
           width={155}
           height={155}
           alt="woman with a phone in the hand using wekavit"
-          className="absolute right-20 bottom-0 sm:hidden z-0"
+          className="absolute right-20 md:mr-40 bottom-0 sm:hidden z-0"
           draggable={false}
         />
       </div>
     </div>
-
-    // text-44px font-bold leading-tight text-hero-text mb-6 sm:text-35px sm:tracking-normal sm:text-4xl sm:leading-tight
   );
 };

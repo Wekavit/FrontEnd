@@ -126,7 +126,7 @@ const Navbar = () => {
           </div>
           <Link
             href=""
-            className="ml-5 mr-5 duration-300 cursor-pointer bg-primary-color text-white text-sm font-semibold flex items-center justify-center px-8 py-3 rounded-lg shadow-lg shadow-blue-300 hover:-mt-2 hover:transition-all hover:shadow-blue-200 hover:shadow-lg sm:hidden md:hidden"
+            className="ml-5 mr-5 -mt-2 duration-300 cursor-pointer bg-primary-color text-white text-sm font-semibold flex items-center justify-center px-8 py-3 rounded-lg shadow-lg shadow-blue-300 hover:-mt-2 hover:transition-all hover:shadow-blue-200 hover:shadow-lg sm:hidden md:hidden"
           >
             Rejoignez-nous
           </Link>

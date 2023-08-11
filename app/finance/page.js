@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { MockupScreen } from "@/assets";
+import { investDown, MockupScreen } from "@/assets";
 
 const page = () => {
   return (
@@ -38,17 +38,58 @@ const page = () => {
           </p>
         </div>
 
-        <div className="w-full p-9 bg-slate-500 flex flex-wrap justify-center gap-8 sm:w-full sm:gap-6 sm:py-7 md:w-full md:gap-4">
-          <div className="w-30% p-9 bg-white rounded relative flex flex-col items-center border-blue-small border sm:w-full">
-            <span className="bg-red-400 rounded-full px-4 py-3">1</span>
-            <h1 className="font-semibold text-2xl mt-4 text-text-dark sm:text-xl md:text-xl">
-              Dépôt
+        <div className="w-full px-9 py-3 flex flex-wrap mb-5 justify-center gap-7 sm:w-full sm:gap-6 sm:py-7 md:w-full md:gap-4">
+          <div className="w-30 py-9 px-6 bg-white rounded relative flex flex-col items-center border-blue-small border sm:w-full">
+            <div className="w-12 h-12 rounded-full text-white bg-primary-color flex justify-center items-center">
+              1
+            </div>
+            <h1 className="font-semibold text-center text-xl mt-4 text-text-dark sm:text-xl md:text-xl">
+              Les intérêts réels comptent
             </h1>
-            <p className="mt-3 text-base text-gray-text leading-7 sm:text-sm sm:leading-6">
-              Effectuez des dépôts dans votre portefeuille wekavit en utilisant
-              votre mobile money ou votre carte bancaire.
+            <p className="mt-3 text-sm text-center text-gray-text leading-5 sm:text-sm sm:leading-6">
+              Votre argent perdra de la valeur assis sur un compte bancaire où
+              le taux d'intérêt est très bas. La vraie croissance, c'est quand
+              le rendement de votre argent bat l'inflation..
             </p>
           </div>
+
+          <div className="w-30 py-9 px-6 bg-white rounded relative flex flex-col items-center border-blue-small border sm:w-full">
+            <div className="w-12 h-12 rounded-full text-white bg-primary-color flex justify-center items-center">
+              2
+            </div>
+            <h1 className="font-semibold text-center text-xl mt-4 text-text-dark sm:text-xl md:text-xl">
+              Faites travailler votre argent
+            </h1>
+            <p className="mt-3 text-sm text-center text-gray-text leading-5 sm:text-sm sm:leading-6">
+              Les riches font travailler leur argent pour eux, et non l'inverse.
+              Ne soyez pas esclave de l'argent toute votre vie. Commencez à
+              faire travailler votre argent.
+            </p>
+          </div>
+
+          <div className="w-30 py-9 px-6 bg-white rounded relative flex flex-col items-center border-blue-small border sm:w-full">
+            <div className="w-12 h-12 rounded-full text-white bg-primary-color flex justify-center items-center">
+              3
+            </div>
+            <h1 className="font-semibold text-center text-xl mt-4 text-text-dark sm:text-xl md:text-xl">
+              La croissance est réelle
+            </h1>
+            <p className="mt-3 text-sm text-center text-gray-text leading-5 sm:text-sm sm:leading-6">
+              C'est l'un des miracles de l'argent. Lorsque vous investissez,
+              votre argent a la chance de gagner croissance sur croissance !
+            </p>
+          </div>
+        </div>
+
+        <div className=" w-full h-auto flex bg-slate-500 py-9">
+          <div className="w-45% h-auto bg-red-300 flex justify-center items-center p-3 sm:w-full sm:flex sm:justify-center sm:px-5 md:w-full md:px-17">
+            <Image
+              src={investDown}
+              className="w-300 h-auto"
+              alt="People using wekavit"
+            />
+          </div>
+          <div className=" w-65% h-80 bg-green-300"></div>
         </div>
       </div>
     </div>
