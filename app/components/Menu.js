@@ -19,7 +19,7 @@ const Menu = ({ open, setOpen }) => {
   const phoneNumber = "tel:+25768887091";
   const whatsapp = "https://wa.me/68887091";
   const mail =
-    "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=cedricklupembe91@gmail.com";
+    "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=wekavit@gmail.com";
 
   return (
     <>
@@ -51,6 +51,7 @@ const Menu = ({ open, setOpen }) => {
                       alt="Personal wallet link"
                       width={16}
                       height={16}
+                      draggable="false"
                     />
                   </span>
                   <span>Personnel</span>
@@ -65,13 +66,14 @@ const Menu = ({ open, setOpen }) => {
                       alt="lock group saving link"
                       width={15}
                       height={15}
+                      draggable="false"
                     />
                   </span>
                   <span>Collectif</span>
                 </li>
               </Link>
 
-              <Link href="/Individual" onClick={() => setOpen(!open)}>
+              <Link href="/finance" onClick={() => setOpen(!open)}>
                 <li className="w-full pl-2 pr-5 flex items-center justify-start gap-5 py-3 text-sm">
                   <span className="p-3 bg-green-mobileMenuBtn rounded-lg">
                     <Image
@@ -79,6 +81,7 @@ const Menu = ({ open, setOpen }) => {
                       alt="Individual finance link"
                       width={15}
                       height={15}
+                      draggable="false"
                     />
                   </span>
                   <span>Individuel</span>
@@ -93,6 +96,7 @@ const Menu = ({ open, setOpen }) => {
                       alt="Collaboratif finance link"
                       width={15}
                       height={15}
+                      draggable="false"
                     />
                   </span>
                   <span>Collaboratif</span>

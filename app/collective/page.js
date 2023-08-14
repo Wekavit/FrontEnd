@@ -51,7 +51,11 @@ const page = () => {
 
         <div className="w-full flex p-5 py-10 px-17 sm:p-5 sm:flex-col md:flex-col md:px-20">
           <div className="w-1/2 py-4 sm:w-full md:w-full">
-            <Image src={GroupSavingTwo} alt="Group of wekavit users" />
+            <Image
+              src={GroupSavingTwo}
+              draggable="false"
+              alt="Group of wekavit users"
+            />
           </div>
 
           <div className="w-1/2 py-4 flex justify-center flex-col px-14 sm:w-full sm:justify-start sm:px-0 md:w-full md:justify-start md:px-0 md:mt-4">
@@ -73,7 +77,12 @@ const page = () => {
         <div className="w-10/12 p-9 flex flex-wrap justify-center gap-8 sm:w-full sm:gap-6 sm:py-7 md:w-full md:gap-4">
           <div className="w-45% p-9 bg-white rounded relative flex flex-col border-blue-small border sm:w-full">
             <div>
-              <Image src={DepositIcon} className="sm:w-10 md:w-12" alt="" />
+              <Image
+                src={DepositIcon}
+                draggable="false"
+                className="sm:w-10 md:w-12"
+                alt=""
+              />
             </div>
             <h1 className="font-semibold text-2xl mt-4 text-text-dark sm:text-xl md:text-xl">
               Dépôt
@@ -89,6 +98,7 @@ const page = () => {
                 src={GoalIcon}
                 className="sm:w-10 md:w-12"
                 alt="Goal icon"
+                draggable="false"
               />
             </div>
             <h1 className=" font-semibold text-2xl mt-4 text-text-dark sm:text-xl md:text-xl">
@@ -106,6 +116,7 @@ const page = () => {
                 src={MoneyPay}
                 className="sm:w-10 md:w-12"
                 alt="Money pay hand"
+                draggable="false"
               />
             </div>
             <h1 className=" font-semibold text-2xl mt-4 text-text-dark sm:text-xl md:text-xl">
@@ -123,6 +134,7 @@ const page = () => {
                 src={LockIcon}
                 className="sm:w-10 md:w-12"
                 alt="Lock money Icon"
+                draggable="false"
               />
             </div>
             <h1 className=" font-semibold text-2xl mt-4 text-text-dark sm:text-xl md:text-xl">

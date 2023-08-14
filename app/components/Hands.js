@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { handsMock } from "@/assets";
 import Link from "next/link";
+import Links from "../utils/Links";
 
 const Hands = () => {
   return (
@@ -26,7 +27,7 @@ const Hands = () => {
             Tout est conservé sous un cryptage de niveau militaire
           </h1>
           <Link
-            href="#"
+            href={Links.Newsletter}
             className="py-2 px-5 rounded-full bg-primary-color text-white text-sm"
           >
             Rejoindre la liste d'attente

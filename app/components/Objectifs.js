@@ -2,6 +2,7 @@ import React from "react";
 import { Objectives, FreeShape } from "@/assets";
 import Image from "next/image";
 import Link from "next/link";
+import Links from "../utils/Links";
 
 export default function Objectifs() {
   return (
@@ -10,7 +11,7 @@ export default function Objectifs() {
         <Image
           src={Objectives}
           width={700}
-          // height={700}
+          draggable="false"
           alt="Wekavit interface"
           className="md:-mt-0 object-fill h-auto"
         />
@@ -25,7 +26,7 @@ export default function Objectifs() {
           économies grâce à notre interface conviviale et intuitive
         </p>
         <div className="w-full">
-          <Link href="/start">
+          <Link href={Links.Newsletter}>
             <button className="bg-primary-color flex justify-center items-center w-36 py-3 rounded sm:w-28 mt-3 text-white text-sm sm:text-xs">
               Commencer
             </button>
@@ -35,6 +36,7 @@ export default function Objectifs() {
           src={FreeShape}
           width={100}
           height={100}
+          draggable="false"
           alt=""
           className="object-cover -mt-10 ml-40 sm:ml-32 sm:-mt-10"
         />

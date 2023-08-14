@@ -10,6 +10,7 @@ export default function Steps() {
           src={BusinessMan}
           width={400}
           height={500}
+          draggable="false"
           alt=""
           className="object-cover border-service-border border rounded-md md:-mt-4 md:-ml-5"
         />

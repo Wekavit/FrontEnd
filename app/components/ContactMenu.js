@@ -5,7 +5,7 @@ const ContactMenu = ({ contact, setContact, setService }) => {
   const phoneNumber = "tel:+25768887091";
   const whatsapp = "https://wa.me/68887091";
   const mail =
-    "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=cedricklupembe91@gmail.com";
+    "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=wekavit@gmail.com";
 
   return (
     <div

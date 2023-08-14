@@ -19,6 +19,7 @@ export default function Tracking() {
                 src={CheckCircle}
                 width={25}
                 height={25}
+                draggable="false"
                 alt=""
                 className="md:w-6 md:h-6"
               />
@@ -36,6 +37,7 @@ export default function Tracking() {
                 src={CheckCircle}
                 width={25}
                 height={25}
+                draggable="false"
                 alt=""
                 className="md:w-6 md:h-6"
               />
@@ -54,6 +56,7 @@ export default function Tracking() {
           src={Features}
           width={500}
           height={500}
+          draggable="false"
           alt=""
           className="sm:ml-6 sm:w-full"
         />

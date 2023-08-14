@@ -4,6 +4,7 @@ import Image from "next/image";
 import { GirlsBanner, MockupOne, shapPersonal } from "@/assets";
 import Link from "next/link";
 import Footer from "../components/Footer";
+import Links from "../utils/Links";
 
 const page = () => {
   return (
@@ -22,7 +23,12 @@ const page = () => {
         </div>
 
         <div className="w-45% h-full p-3 mt-3 sm:w-full sm:flex sm:justify-center sm:px-5 md:w-full md:px-17">
-          <Image src={MockupOne} className="" alt="Mockup personnal save" />
+          <Image
+            src={MockupOne}
+            draggable="false"
+            className=""
+            alt="Mockup personnal save"
+          />
         </div>
       </div>
 
@@ -78,6 +84,7 @@ const page = () => {
               src={GirlsBanner}
               className="h-full"
               alt="Girls checking phone"
+              draggable="false"
             />
           </div>
 
@@ -91,7 +98,7 @@ const page = () => {
               concurrents.
             </p>
             <Link
-              href=""
+              href={Links.Newsletter}
               className="bg-primary-color text-center rounded-md w-2/4 py-3 text-white text-sm mt-5"
             >
               Rejoignez nous

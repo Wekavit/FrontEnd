@@ -45,6 +45,14 @@ import LockIcon from "../assets/images/landing/icons-group-saving/Lock-1.svg";
 // Invest alone
 import MockupScreen from "../assets/images/landing/invest-mock-one.svg";
 import investDown from "../assets/images/landing/financeDown.svg";
+import InvestOne from "../assets/images/landing/icons-group-saving/investOne.svg";
+import InvestTwo from "../assets/images/landing/icons-group-saving/investTwo.svg";
+import InvestThree from "../assets/images/landing/icons-group-saving/investThree.svg";
+import InvestFour from "../assets/images/landing/icons-group-saving/investFour.svg";
+import AvatarOne from "../assets/images/landing/InvestAvatars/AvatarOne.svg";
+import AvatarTwo from "../assets/images/landing/InvestAvatars/AvatarTwo.svg";
+import AvatarThree from "../assets/images/landing/InvestAvatars/AvatarThree.svg";
+
 //Steps
 import BusinessMan from "../assets/images/landing/businessman-looking-smartphone.jpg";
 
@@ -64,6 +72,9 @@ import Features from "../assets/images/landing/Features-image.svg";
 
 // Hands mockup
 import handsMock from "../assets/images/landing/handMock.png";
+
+// Not found page
+import NotFoundAvatar from "../assets/images/landing/PageNotFound.webp";
 
 export {
   Logo,
@@ -111,6 +122,13 @@ export {
   // Invest Alone
   MockupScreen,
   investDown,
+  InvestOne,
+  InvestTwo,
+  InvestThree,
+  InvestFour,
+  AvatarOne,
+  AvatarTwo,
+  AvatarThree,
 
   //Steps
   BusinessMan,
@@ -131,4 +149,7 @@ export {
 
   // Hands
   handsMock,
+
+  // Not found
+  NotFoundAvatar,
 };

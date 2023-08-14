@@ -30,6 +30,7 @@ const page = () => {
             src={SocialImage}
             className=" w-auto h-full sm:w-64 object-cover"
             alt="Image friends"
+            draggable="false"
           />
         </div>
       </div>
@@ -65,6 +66,7 @@ const page = () => {
                   src={cedProfile}
                   className="w-28 h-auto rounded-full sm:w-24"
                   alt="Cedrick profile"
+                  draggable="false"
                 />
               </div>
               <h2 className=" font-semibold text-base mt-3">Cedrick Lupembe</h2>
@@ -81,6 +83,7 @@ const page = () => {
                   src={cedProfile}
                   className="w-28 h-auto rounded-full sm:w-24"
                   alt="Cedrick profile"
+                  draggable="false"
                 />
               </div>
               <h2 className=" font-semibold text-base mt-3">Cedrick Lupembe</h2>
@@ -97,6 +100,7 @@ const page = () => {
                   src={cedProfile}
                   className="w-28 h-auto rounded-full sm:w-24"
                   alt="Cedrick profile"
+                  draggable="false"
                 />
               </div>
               <h2 className=" font-semibold text-base mt-3">Cedrick Lupembe</h2>

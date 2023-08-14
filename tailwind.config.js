@@ -135,6 +135,7 @@ module.exports = {
         785: "1024px",
         300: "300px",
         350: "350px",
+        450: "500px",
         30: "30%",
         "service-width": "37%",
         "service-w-sm": "36%",

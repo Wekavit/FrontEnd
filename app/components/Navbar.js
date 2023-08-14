@@ -117,6 +117,7 @@ const Navbar = () => {
               src={Login}
               width={20}
               height={20}
+              draggable="false"
               alt="Picture of the author"
               className="-mt-1 mr-2 font-bold text-sm"
             />

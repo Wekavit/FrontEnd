@@ -10,6 +10,8 @@ import {
 import Image from "next/image";
 import { HiArrowLongRight } from "react-icons/hi2";
 
+import Links from "../utils/Links";
+
 export const Hero = () => {
   const Newsletters = "https://tally.so/r/mY0jj0";
   const WhatsApp = "https://wa.me/68887091";
@@ -32,7 +34,7 @@ export const Hero = () => {
             Plus tôt vous vous inscrivez, plus tôt vous aurez accès
           </span>
           <Link
-            href={Newsletters}
+            href={Links.Newsletter}
             className="w-2/3 duration-300 rounded-lg shadow-lg shadow-blue-300 sm:w-10/12"
           >
             <div className="flex gap-4 py-3 px-4 justify-center items-center font-medium cursor-pointer text-white bg-primary-color rounded-md hover:transition-all hover:shadow-blue-200 hover:shadow-lg sm:justify-center sm:text-center sm:w-full sm:mt-2 sm:ml-0 sm:text-sm">

@@ -19,6 +19,7 @@ export default function Secure() {
               alt="Security icon"
               width={30}
               height={30}
+              draggable="false"
             />
           </div>
           <div className="w-4/5 mt-0.18rem">
@@ -38,6 +39,7 @@ export default function Secure() {
               alt="Security icon"
               width={30}
               height={30}
+              draggable="false"
             />
           </div>
           <div className="w-4/5 mt-0.18rem">
@@ -59,6 +61,7 @@ export default function Secure() {
               alt="Security icon"
               width={30}
               height={30}
+              draggable="false"
             />
           </div>
           <div className="w-4/5 mt-0.18rem">
@@ -78,6 +81,7 @@ export default function Secure() {
               alt="Security icon"
               width={30}
               height={30}
+              draggable="false"
             />
           </div>
           <div className="w-4/5 mt-0.18rem">
