@@ -7,9 +7,9 @@ import { NotFoundAvatar } from "@/assets";
 
 export default function NotFound() {
   return (
-    <div className="w-full flex h-auto mt-12vh pt-20 justify-center items-center flex-col">
+    <div className="w-full flex h-auto mt-12vh pt-20 justify-center items-center flex-col sm:px-2">
       <div className="w-3/4 flex flex-col justify-center items-center sm:w-full sm:px-3">
-        <h1 className="text-center font-bold text-5xl leading-normal sm:text-3xl md:text-4xl">
+        <h1 className="text-center text-hero-text font-bold text-5xl leading-normal sm:text-3xl md:text-4xl">
           Oops! Il semble que vous soyez tombé sur un{" "}
           <span className=" text-primary-color">territoire inexploré</span>.
         </h1>

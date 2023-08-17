@@ -21,7 +21,7 @@ const page = () => {
       <div className="w-full h-full flex flex-wrap sm:flex-col sm:flex-nowrap sm:pt-14 pb-5 sm:h-auto md:h-auto md:flex-col md:flex-nowrap md:pt-14 md:pb-14">
         <div className="w-1/2 h-full flex flex-col justify-center pl-24 sm:w-full sm:pl-7 md:w-full">
           <h1 className="text-4xl font-bold leading-tight text-text-dark sm:text-3xl sm:leading-tight">
-            Investissez en toute sécurité et en toute confiance
+            Investissement sans stress adapté à vos besoins
           </h1>
 
           <span className="bg-blue-mobileMenuBtn w-52 rounded-full py-3 px-5 text-xs text-center mt-5 font-semibold text-primary-color">

@@ -54,7 +54,7 @@ const page = () => {
             </p>
           </div>
 
-          <div className="w-full h-auto flex flex-wrap justify-center items-center gap-x-3 pt-6 pb-4 mt-3 sm:mt-1">
+          <div className="w-full h-auto flex flex-wrap justify-center items-center gap-x-9 pt-6 pb-4 mt-3 sm:mt-1">
             <div className="w-auto h-auto p-4 flex flex-col justify-center items-center">
               <div className="w-auto h-auto relative">
                 <Link href="">
@@ -70,7 +70,7 @@ const page = () => {
                 />
               </div>
               <h2 className=" font-semibold text-base mt-3">Cedrick Lupembe</h2>
-              <p className="text-xs text-gray-text">Founder & CEO</p>
+              <p className="text-xs text-gray-text">Co-founder & CEO</p>
             </div>
             <div className="w-auto h-auto p-4 flex flex-col justify-center items-center">
               <div className="w-auto h-auto relative">
@@ -86,8 +86,8 @@ const page = () => {
                   draggable="false"
                 />
               </div>
-              <h2 className=" font-semibold text-base mt-3">Cedrick Lupembe</h2>
-              <p className="text-xs text-gray-text">Founder & CEO</p>
+              <h2 className=" font-semibold text-base mt-3">Landry Kulondwa</h2>
+              <p className="text-xs text-gray-text">Co-founder & CTO</p>
             </div>
             <div className="w-auto h-auto p-4 flex flex-col justify-center items-center">
               <div className="w-auto h-auto relative">
@@ -103,8 +103,8 @@ const page = () => {
                   draggable="false"
                 />
               </div>
-              <h2 className=" font-semibold text-base mt-3">Cedrick Lupembe</h2>
-              <p className="text-xs text-gray-text">Founder & CEO</p>
+              <h2 className=" font-semibold text-base mt-3">Adolphe Kabambe</h2>
+              <p className="text-xs text-gray-text">Co-founder & COO</p>
             </div>
           </div>
         </div>

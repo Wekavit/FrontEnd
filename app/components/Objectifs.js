@@ -18,12 +18,12 @@ export default function Objectifs() {
       </div>
       <div className="w-2/4 h-full flex flex-col mt-32 px-5 sm:w-full sm:px-0 sm:mt-4 sm:justify-center sm:ml-0 md:ml-0 md:items-start md:mt-16">
         <h1 className="font-semibold text-3xl text-hero-text leading-normal mb-4 sm:w-full sm:text-xl sm:text-left md:text-2xl">
-          Une application d'épargne et d'investissement élegante, facile à
-          utiliser
+          Créez plusieurs plans d'épargne pour réaliser vos objectifs de vie !
         </h1>
         <p className="text-base text-gray-text leading-normal mb-4 pr-8 sm:w-full sm:text-sm sm:flex sm:justify-center sm:items-center sm:pr-0 md:text-base">
-          Suivez facilement l'évolution de vos investissements et de vos
-          économies grâce à notre interface conviviale et intuitive
+          Qu'il s'agisse d'épargner pour une nouvelle maison, l'éducation des
+          enfants ou de parcourir le monde, concentrez-vous sur ce qui compte et
+          économisez votre chemin pour en faire une réalité
         </p>
         <div className="w-full">
           <Link href={Links.Newsletter}>

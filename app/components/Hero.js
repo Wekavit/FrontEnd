@@ -9,13 +9,9 @@ import {
 } from "@/assets";
 import Image from "next/image";
 import { HiArrowLongRight } from "react-icons/hi2";
-
 import Links from "../utils/Links";
 
 export const Hero = () => {
-  const Newsletters = "https://tally.so/r/mY0jj0";
-  const WhatsApp = "https://wa.me/68887091";
-
   return (
     <div className="w-full flex flex-wrap h-89vh mt-11vh sm:h-auto md:h-auto overflow-hidden">
       {/* text box  */}

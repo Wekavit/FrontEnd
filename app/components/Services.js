@@ -40,7 +40,7 @@ export default function Services() {
             <h4 className="text-hero-text mt-3 font-medium text-lg mb-3 sm:text-base sm:mt-4">
               Personnel
             </h4>
-            <p className="text-light-gray text-sm mb-3 sm:text-sm w-4/5 sm:mb-6 md:mb-5 md:w-full">
+            <p className="text-gray-text text-sm mb-3 sm:text-sm w-4/5 sm:mb-6 md:mb-5 md:w-full">
               Créer son propre portefeuille et y déposer de l'argent pour les
               objectifs futurs
             </p>
@@ -64,7 +64,7 @@ export default function Services() {
             <h4 className="text-hero-text mt-3 font-medium text-lg mb-3 sm:text-base sm:mt-4">
               Collectif
             </h4>
-            <p className="text-light-gray text-sm mb-8 sm:text-sm sm:mb-12 md:mb-4">
+            <p className="text-gray-text text-sm mb-8 sm:text-sm sm:mb-12 md:mb-4">
               Economiser avec d'autres personnes en créant de groupes d'épargne
             </p>
             <div>
@@ -89,7 +89,7 @@ export default function Services() {
             <h4 className="text-hero-text mt-3 font-medium text-lg mb-3 sm:text-base sm:mt-4">
               Individuel
             </h4>
-            <p className="text-light-gray text-sm mb-3 sm:text-sm sm:mb-6">
+            <p className="text-gray-text text-sm mb-3 sm:text-sm sm:mb-6">
               Commence aujourd'hui à investir ton argent dans des projets
               rentables
             </p>
@@ -113,7 +113,7 @@ export default function Services() {
             <h4 className="text-hero-text mt-3 font-medium text-lg mb-3 sm:text-base sm:mt-4 ">
               Collaboratif
             </h4>
-            <p className="text-light-gray text-sm mb-8 sm:text-sm sm:mb-12 md:mb-10">
+            <p className="text-gray-text text-sm mb-8 sm:text-sm sm:mb-12 md:mb-10">
               Investir avec d'autres personnes pour maximiser votre rendement
             </p>
             <div>

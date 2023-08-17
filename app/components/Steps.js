@@ -28,7 +28,7 @@ export default function Steps() {
             <h3 className="font-semibold text-lg mb-4 text-dark-primary-color sm:text-base md:-mt-1 md:mb-3">
               Créer un compte
             </h3>
-            <p className="leading-relaxed text-light-gray w-2/3 sm:w-full sm:text-sm md:w-full">
+            <p className="leading-relaxed text-gray-text w-2/3 sm:w-full sm:text-sm md:w-full">
               Créez un compte avec votre nom, votre adresse mail et votre numéro
               de téléphone.
             </p>
@@ -43,7 +43,7 @@ export default function Steps() {
             <h3 className="font-semibold text-lg mb-2 text-dark-primary-color mt-4 sm:text-base md:mb-0">
               Ajouter un moyen de paiement
             </h3>
-            <p className="leading-relaxed text-light-gray w-2/3 mt-6 sm:w-full sm:text-sm md:w-full md:mt-3 md:text-justify">
+            <p className="leading-relaxed text-gray-text w-2/3 mt-6 sm:w-full sm:text-sm md:w-full md:mt-3 md:text-justify">
               A l'aide de votre compte mobile money ou d'un virement bancaire
               configurez votre premier plan.
             </p>
@@ -58,7 +58,7 @@ export default function Steps() {
             <h3 className="font-semibold text-lg mb-4 text-dark-primary-color sm:text-base md:mb-3">
               Regarder votre argent se fructifier
             </h3>
-            <p className=" leading-relaxed text-light-gray w-2/3 sm:w-full sm:text-sm md:w-full md:text-justify">
+            <p className=" leading-relaxed text-gray-text w-2/3 sm:w-full sm:text-sm md:w-full md:text-justify">
               Asseyez vous, détendez vous et laissez votre argent travailler
               pour vous toute la journée, tous les jours.
             </p>

@@ -25,9 +25,9 @@ export default function Tracking() {
               />
             </div>
             <div className="w-4/5 sm:w-full md:w-full">
-              <h4 className="text-sm text-light-gray md:text-sm">
-                Notre fonctionalité de suivie vous aide à rester à l'écoute de
-                vos finances
+              <h4 className="text-sm text-gray-text md:text-sm">
+                Gérez votre argent à tout moment et atteignez plusieurs
+                objectifs
               </h4>
             </div>
           </div>
@@ -43,9 +43,9 @@ export default function Tracking() {
               />
             </div>
             <div className="w-4/5 sm:w-full md:w-full bg-red-0">
-              <h4 className="text-sm text-light-gray md:text-sm">
-                Notre fonctionalité de verouillage vous permez de définir un
-                délai
+              <h4 className="text-sm text-gray-text md:text-sm">
+                Obtenez de meilleurs intérêts que votre banque lorsque vous
+                épargnez
               </h4>
             </div>
           </div>

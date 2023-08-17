@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Secure() {
   return (
-    <div className="w-full h-auto flex flex-col justify-center items-center bg-white pt-14 pb-20">
+    <div className="w-full h-auto flex flex-col justify-center items-center bg-white pt-14 pb-20 sm:px-3">
       <span className="text-primary-color mb-3 text-center font-semibold text-sm sm:-mt-4">
         Vous pouvez nous faire confiance
       </span>
@@ -26,7 +26,7 @@ export default function Secure() {
             <h4 className="text-base font-semibold text-text-dark mb-1">
               Authentification à deux facteurs
             </h4>
-            <h4 className="text-sm text-light-gray">
+            <h4 className="text-sm text-gray-text">
               Sécurité à votre compte en exigeant un code envoyé à votre adresse
               e-mail
             </h4>
@@ -46,7 +46,7 @@ export default function Secure() {
             <h4 className="text-base font-semibold text-text-dark mb-1">
               Chiffrement fort
             </h4>
-            <h4 className="text-sm text-light-gray">
+            <h4 className="text-sm text-gray-text">
               Est une façon de protéger vos données en convertissant le texte en
               un langage code.
             </h4>
@@ -68,7 +68,7 @@ export default function Secure() {
             <h4 className="text-base font-semibold text-text-dark mb-1">
               Application à jour
             </h4>
-            <h4 className="text-sm text-light-gray">
+            <h4 className="text-sm text-gray-text">
               La mise à jour régulière de votre application pour corriger toute
               vulnérabilité.
             </h4>
@@ -88,7 +88,7 @@ export default function Secure() {
             <h4 className="text-base font-semibold text-text-dark mb-1">
               Assistance 24/24
             </h4>
-            <h4 className="text-sm text-light-gray">
+            <h4 className="text-sm text-gray-text">
               Vous rencontrez des problèmes, vous pouvez contacter l'équipe
               d’assistance pour obtenir de l'aide.
             </h4>

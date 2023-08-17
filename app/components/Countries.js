@@ -8,7 +8,7 @@ export default function Countries() {
       <p className="font-semibold text-4xl text-center text-dark-hero-text leading-normal mb-2 sm:text-center sm:text-1.55rem sm:tracking-normal md:tracking-normal">
         Disponible dans 2 pays africains
       </p>
-      <h4 className="text-base text-light-gray text-center mb-3 sm:text-xs sm:w-2/3 font-medium md:text-sm">
+      <h4 className="text-base text-gray-text text-center mb-3 sm:text-xs sm:w-2/3 font-medium md:text-sm">
         Nous avons des bureaux et des équipes dans deux pays
       </h4>
       <div className="w-full h-auto md:w-full">
