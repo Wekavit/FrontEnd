@@ -41,7 +41,7 @@ const Navbar = () => {
   const Links = [
     { text: "Services", href: "#" },
     { text: "Entreprise", href: "/about" },
-    { text: "FAQs", href: "Faqs" },
+    { text: "FAQs", href: "/faq" },
     { text: "Contacter nous", href: "Contact" },
   ];
 
@@ -52,10 +52,9 @@ const Navbar = () => {
     <>
       {/* navbar section  */}
       <div
-        className={`w-full z-50 h-11vh transition-all pb-2 duration-200 ease-in-out delay-150 flex fixed top-0 bg-transparent items-center justify-between px-11 sm:items-center sm:px-1 md:items-center md:bg-red md:px-16 pt-4 ${
-          (open ? "sm:shadow-md md:shadow-md sm:bg-white md:bg-white" : "",
+        className={`w-full z-50 h-11vh transition-all pb-2 duration-200 ease-in-out delay-150 flex fixed top-0 bg-transparent items-center justify-between px-11 sm:items-center sm:px-1 md:items-center md:bg-red md:px-16 pt-4 ${(open ? "sm:shadow-md md:shadow-md sm:bg-white md:bg-white" : "",
           change ? "bg-white border-b border-gray-200" : "")
-        }`}
+          }`}
       >
         <div className="w-1/5 h-auto -mt-4">
           <Link href="">
@@ -97,10 +96,9 @@ const Navbar = () => {
                           : null;
                       }}
                       className={`cursor-pointer mr-6 py-4 hover:text-primary-color transition-all duration-700 ease-in-out delay-150
-                        ${
-                          isActive
-                            ? "ml-6 text-primary-color  transition-colors"
-                            : "text-gray-500 ml-6 transition-colors"
+                        ${isActive
+                          ? "ml-6 text-primary-color  transition-colors"
+                          : "text-gray-500 ml-6 transition-colors"
                         }
                       `}
                     >

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { HiOutlineChevronDown } from "react-icons/hi";
+import { HiOutlineChevronDown } from 'react-icons/hi'
 
 // Icons
 import {
@@ -31,9 +31,8 @@ const Menu = ({ open, setOpen }) => {
             onClick={() => setServices(!services)}
           >
             <HiOutlineChevronDown
-              className={`text-sm transition-all ease-in-out delay-150 ${
-                services ? "rotate-180" : ""
-              }`}
+              className={`text-sm transition-all ease-in-out delay-150 ${services ? "rotate-180" : ""
+                }`}
             />
           </button>
         </li>
@@ -121,9 +120,8 @@ const Menu = ({ open, setOpen }) => {
             onClick={() => setContact(!contact)}
           >
             <HiOutlineChevronDown
-              className={`text-sm transition-all ease-in-out delay-150 ${
-                contact ? "rotate-180" : ""
-              }`}
+              className={`text-sm transition-all ease-in-out delay-150 ${contact ? "rotate-180" : ""
+                }`}
             />
           </button>
         </li>
