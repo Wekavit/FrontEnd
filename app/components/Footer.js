@@ -20,9 +20,9 @@ const Footer = () => {
             draggable="false"
           />
           <p className="text-xs -mt-11 text-gray-text leading-5">
-            Une application de gestion financière conviviale et sécurisée qui
+            {`Une application de gestion financière conviviale et sécurisée qui
             peut vous aider à gérer vos finances de manière plus efficace et
-            plus efficiente.
+            plus efficiente.`}
           </p>
 
           <div className="w-full h-auto flex justify-start gap-x-5 mt-6">

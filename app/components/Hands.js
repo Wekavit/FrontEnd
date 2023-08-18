@@ -21,21 +21,21 @@ const Hands = () => {
       <div className="w-3/6 h-auto flex justify-center items-center py-5 mt-5 sm:w-full sm:px-3 sm:mt-9 md:w-full md:mt-2">
         <div className="w-4/5 h-350 -ml-9 overflow-hidden relative bg-white flex items-start justify-center flex-col sm:w-full sm:h-auto sm:-ml-0 md:w-full md:h-auto">
           <span className="font-medium text-primary-color mb-2">
-            Niveau de sécurité
+            {`Niveau de sécurité`}
           </span>
           <h1 className="font-semibold text-3xl mb-5 leading-normal sm:text-2xl">
-            Tout est conservé sous un cryptage de niveau militaire
+            {` Tout est conservé sous un cryptage de niveau militaire`}
           </h1>
           <Link
             href={Links.Newsletter}
             className="py-2 px-5 rounded-full bg-primary-color text-white text-sm"
           >
-            Rejoindre la liste d'attente
+            {`Rejoindre la liste d'attente`}
           </Link>
           <hr className=" w-full h-1px bg-gray-100 my-8" />
           <p className=" text-gray-text text-sm leading-normal">
-            N'économisez pas ce qui reste après avoir dépensé, mais dépensez ce
-            qui reste après avoir économisé
+            {`N'économisez pas ce qui reste après avoir dépensé, mais dépensez ce
+            qui reste après avoir économisé`}
           </p>
           <h3 className="mt-4 text-base font-medium text-gray-800">
             Warren Buffet

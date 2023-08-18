@@ -154,7 +154,7 @@ const Menu = ({ open, setOpen }) => {
 
         <Link href="/Inscription">
           <div className="w-11/12 ml-2 mt-3 p-2 text-center text-base bg-primary-color text-white rounded-lg border-2 border-primary-color">
-            S'inscrire
+            {`S'inscrire`}
           </div>
         </Link>
       </ul>
