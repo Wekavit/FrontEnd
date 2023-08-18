@@ -8,6 +8,7 @@ import { Logo, Login, logoMobile } from "@/assets";
 import Burger from "./Burger";
 import ServiceMenu from "./ServiceMenu";
 import ContactMenu from "./ContactMenu";
+import Social from "@/utils/Social";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -52,9 +53,10 @@ const Navbar = () => {
     <>
       {/* navbar section  */}
       <div
-        className={`w-full z-50 h-11vh transition-all pb-2 duration-200 ease-in-out delay-150 flex fixed top-0 bg-transparent items-center justify-between px-11 sm:items-center sm:px-1 md:items-center md:bg-red md:px-16 pt-4 ${(open ? "sm:shadow-md md:shadow-md sm:bg-white md:bg-white" : "",
+        className={`w-full z-50 h-11vh transition-all pb-2 duration-200 ease-in-out delay-150 flex fixed top-0 bg-transparent items-center justify-between px-11 sm:items-center sm:px-1 md:items-center md:bg-red md:px-16 pt-4 ${
+          (open ? "sm:shadow-md md:shadow-md sm:bg-white md:bg-white" : "",
           change ? "bg-white border-b border-gray-200" : "")
-          }`}
+        }`}
       >
         <div className="w-1/5 h-auto -mt-4">
           <Link href="/">
@@ -96,9 +98,10 @@ const Navbar = () => {
                           : null;
                       }}
                       className={`cursor-pointer mr-4 py-4 hover:text-primary-color transition-all duration-700 ease-in-out delay-150
-                        ${isActive
-                          ? "ml-6 text-primary-color  transition-colors"
-                          : "text-gray-500 ml-6 transition-colors"
+                        ${
+                          isActive
+                            ? "ml-6 text-primary-color  transition-colors"
+                            : "text-gray-500 ml-6 transition-colors"
                         }
                       `}
                     >
@@ -124,7 +127,7 @@ const Navbar = () => {
             </h2>
           </div>
           <Link
-            href=""
+            href={Social.Newsletter}
             className="ml-5 mr-5 -mt-2 duration-300 cursor-pointer bg-primary-color text-white text-sm font-semibold flex items-center justify-center px-8 py-3 rounded-lg shadow-lg shadow-blue-300 hover:-mt-2 hover:transition-all hover:shadow-blue-200 hover:shadow-lg sm:hidden md:hidden"
           >
             Rejoignez-nous

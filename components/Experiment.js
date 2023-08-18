@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import Links from "../utils/Links";
+import Social from "../utils/Social";
 
 export default function Experiment() {
   return (
@@ -11,7 +11,7 @@ export default function Experiment() {
           portefeuille numérique innovant`}
         </p>
         <Link
-          href={Links.Newsletter}
+          href={Social.Newsletter}
           className="w-full flex mt-3 items-center justify-between text-xl font-normal sm:font-light text-light-white sm:text-base md:text-xl"
         >
           Rejoignez nous

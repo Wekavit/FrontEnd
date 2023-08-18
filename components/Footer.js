@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { Logo } from "@/assets";
 import Link from "next/link";
-import Links from "../utils/Links";
+import Social from "../utils/Social";
 
 // Icons
 import { FaLinkedin, FaFacebook, FaTwitter } from "react-icons/fa";
@@ -27,21 +27,21 @@ const Footer = () => {
 
           <div className="w-full h-auto flex justify-start gap-x-5 mt-6">
             <Link
-              href={Links.Linkedin}
+              href={Social.Linkedin}
               className=" p-2 bg-blue-mobileMenuBtn text-gray-text rounded-full hover:text-white hover:bg-primary-color transition-all duration-300 ease-in-out delay-150"
             >
               <FaLinkedin />
             </Link>
 
             <Link
-              href={Links.Facebook}
+              href={Social.Facebook}
               className=" p-2 bg-blue-mobileMenuBtn text-gray-text rounded-full hover:text-white hover:bg-primary-color transition-all duration-300 ease-in-out delay-150"
             >
               <FaFacebook />
             </Link>
 
             <Link
-              href={Links.Twitter}
+              href={Social.Twitter}
               className=" p-2 bg-blue-mobileMenuBtn text-gray-text rounded-full hover:text-white hover:bg-primary-color transition-all duration-300 ease-in-out delay-150"
             >
               <FaTwitter />
@@ -103,7 +103,7 @@ const Footer = () => {
         <div className="w-22% h-auto p-2 relative flex flex-col gap-5 -mt-16 overflow-hidden sm:w-full sm:mt-1 md:w-full md:mt-1">
           <h3 className=" font-semibold">NEWSLETTER</h3>
           <Link
-            href={Links.Newsletter}
+            href={Social.Newsletter}
             className=" bg-primary-color text-center rounded-md w-full py-3 text-white text-sm"
           >
             Rejoignez nous

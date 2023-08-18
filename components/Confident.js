@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { Security } from "@/assets";
 import Link from "next/link";
-import Links from "../utils/Links";
+import Social from "../utils/Social";
 
 export default function Confident() {
   return (
@@ -22,7 +22,7 @@ export default function Confident() {
           sécurité de votre argent, la protection de votre compte ainsi que
           celle de toutes vos transactions.`}
         </h4>
-        <Link href={Links.Newsletter}>
+        <Link href={Social.Newsletter}>
           <h4 className="w-2/4 text-xl text-white md:text-sm sm:text-sm sm:px-2 sm:hidden">
             En savoir plus
           </h4>

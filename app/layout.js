@@ -1,7 +1,8 @@
 import "./globals.css";
 import { Sora } from "next/font/google";
 import { Poppins } from "next/font/google";
-import Navbar from "./components/Navbar";
+// import Navbar from "./components/Navbar";
+import Navbar from "@/components/Navbar";
 
 const poppins = Poppins({
   subsets: ["latin"],

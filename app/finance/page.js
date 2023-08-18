@@ -12,8 +12,8 @@ import {
   AvatarThree,
 } from "@/assets";
 
-import Experiment from "../components/Experiment";
-import Footer from "../components/Footer";
+import Experiment from "@/components/Experiment";
+import Footer from "@/components/Footer";
 
 const page = () => {
   return (

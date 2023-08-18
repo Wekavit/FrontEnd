@@ -2,7 +2,7 @@ import React from "react";
 import { Objectives, FreeShape } from "@/assets";
 import Image from "next/image";
 import Link from "next/link";
-import Links from "../utils/Links";
+import Social from "../utils/Social";
 
 export default function Objectifs() {
   return (
@@ -26,7 +26,7 @@ export default function Objectifs() {
           économisez votre chemin pour en faire une réalité
         </p>
         <div className="w-full">
-          <Link href={Links.Newsletter}>
+          <Link href={Social.Newsletter}>
             <button className="bg-primary-color flex justify-center items-center w-36 py-3 rounded sm:w-28 mt-3 text-white text-sm sm:text-xs">
               Commencer
             </button>

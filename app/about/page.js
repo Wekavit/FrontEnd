@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { SocialImage, StickImage, cedProfile } from "@/assets";
 import { FaLinkedin } from "react-icons/fa";
-import Footer from "../components/Footer";
+import Footer from "@/components/Footer";
 
 const page = () => {
   return (

@@ -3,8 +3,8 @@ import Image from "next/image";
 
 import { GirlsBanner, MockupOne, shapPersonal } from "@/assets";
 import Link from "next/link";
-import Footer from "../components/Footer";
-import Links from "../utils/Links";
+import Social from "../../utils/Social";
+import Footer from "@/components/Footer";
 
 const page = () => {
   return (
@@ -98,7 +98,7 @@ const page = () => {
               concurrents.
             </p>
             <Link
-              href={Links.Newsletter}
+              href={Social.Newsletter}
               className="bg-primary-color text-center rounded-md w-2/4 py-3 text-white text-sm mt-5"
             >
               Rejoignez nous
