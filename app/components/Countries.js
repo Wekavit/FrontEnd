@@ -9,7 +9,7 @@ export default function Countries() {
         Disponible dans 2 pays africains
       </p>
       <h4 className="text-base text-gray-text text-center mb-3 sm:text-xs sm:w-2/3 font-medium md:text-sm">
-        {`Nous avons des bureaux et des équipes dans deux pays`}
+        Nous avons des bureaux et des équipes dans deux pays
       </h4>
       <div className="w-full h-auto md:w-full">
         <Image
