@@ -28,7 +28,7 @@ module.exports = {
         "service-collabo": "rgba(195, 86, 179, 0.1)",
         "service-collective": "rgba(250, 151, 3, 0.1)",
         "service-individu": "rgba(25, 134, 23, 0.1)",
-        "step-divider": "rgba(0, 149, 255, 0.5)"
+        "step-divider": "rgba(0, 149, 255, 0.5)",
       },
       colors: {
         "black-text": " #3C4257",
@@ -54,6 +54,13 @@ module.exports = {
         "green-mobileMenuBtn": "rgba(24, 157, 21, 0.1)",
         "pink-mobileMenuBtn": "rgba(195, 86, 178, 0.1)",
         borderColor: "#E2E8F0",
+        stepsColor: "#DADADA",
+
+        // Personnal saving plan
+        blueColor: "#040052",
+        bluelight: "#5A50FE",
+        blueMedium: "#423BBF",
+        blueMain: "#007FFF",
         // "hero-text": "rgba(50, 48, 60, 0.9)",
         "dark-hero-text": "rgba(50, 48, 60, 1)",
         "medium-gray": "rgba(50, 48, 60, 0.8)",
@@ -61,7 +68,10 @@ module.exports = {
         "green-mobileMenuBtn": "rgba(24, 157, 21, 0.1)",
         "pink-mobileMenuBtn": "rgba(195, 86, 178, 0.1)",
         "dark-primary-color": "rgba(22, 59, 95, 0.87)",
-        "light-white": "rgba(255, 255, 255, 0.75)"
+        "light-white": "rgba(255, 255, 255, 0.75)",
+
+        // Hands
+        handsBg: "#E2E8F0",
       },
       // font size
       fontSize: {
@@ -71,36 +81,43 @@ module.exports = {
         "33px": "33px",
         "35px": "35px",
         "38px": "38px",
+        29: "29px",
         "40px": "40px",
         "45px": "45px",
         "12px": "12px",
+        "10px": "10px",
+        "44px": "44px",
         "1.55rem": "1.2rem",
-        "1.56rem": "1.56rem"
+        "1.56rem": "1.56rem",
       },
 
       // Spacing top/bottom/left/right
       spacing: {
         "12vh": "10vh",
         "15%": "15%",
+        "20%": "20%",
         "45%": "45%",
       },
 
       // heigth
       height: {
+        "1px": "1px",
         "2px": "2px",
+        "1px": "1px",
         "11vh": "11vh",
-        "93vh": "93vh",
-        350: "350px",
+        "89vh": "89vh",
         extra: "90%",
-        "30%": "30%",
+        30: "30%",
+        "500px": "500px",
         "2px": "2px",
         "2.5px": "2.3px",
         "73vh": "73vh",
         "65vh": "47vh",
         "57vh": "60vh",
         350: "350px",
+        300: "300px",
         extra: "90%",
-        "50vh": "50vh"
+        "50vh": "50vh",
       },
       // width
       width: {
@@ -110,11 +127,21 @@ module.exports = {
         "45%": "45%",
         "22%": "22%",
         "25%": "25%",
+        "30%": "30%",
+        "60%": "60%",
+        "65%": "65%",
+        "30%": "33%",
+        "90%": "90%",
+        785: "1024px",
+        300: "300px",
+        350: "350px",
+        450: "500px",
+        30: "30%",
         "service-width": "37%",
         "service-w-sm": "36%",
         "service-w-md": "43%",
         "58%": "58%",
-        "100": "100%"
+        100: "100%",
       },
       // Margin etc...
       margin: {
@@ -122,7 +149,7 @@ module.exports = {
         "12vh": "12vh",
         "10.45rem": "10.45rem",
         "0.18rem": "0.18rem",
-        "100": "35rem"
+        100: "35rem",
       },
       //padding
       padding: {
@@ -139,15 +166,15 @@ module.exports = {
         "extra-loose": "2.5",
         36: "45px",
       },
-      // borderColor 
+      // borderColor
       borderColor: {
         "service-border": "rgba(0, 149, 255, 0.3)",
         "secure-border": "rgba(50, 48, 60, 0.1)",
       },
-      // borderWidth 
+      // borderWidth
       borderWidth: {
-        "1px": "1px"
-      }
+        "1px": "1px",
+      },
     },
   },
   plugins: [],

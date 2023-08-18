@@ -19,7 +19,7 @@ const Menu = ({ open, setOpen }) => {
   const phoneNumber = "tel:+25768887091";
   const whatsapp = "https://wa.me/68887091";
   const mail =
-    "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=cedricklupembe91@gmail.com";
+    "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=wekavit@gmail.com";
 
   return (
     <>
@@ -42,7 +42,7 @@ const Menu = ({ open, setOpen }) => {
         {services ? (
           <div className="w-full h-auto rounded p-5 transition-all duration-700 ease-in-out delay-150">
             <ul className="w-full h-full">
-              <Link href="/Personnel">
+              <Link href="/personal" onClick={() => setOpen(!open)}>
                 <li className="w-full pl-2 pr-5 flex items-center justify-start gap-5 py-3 text-sm">
                   <span className="p-3 bg-blue-mobileMenuBtn rounded-lg">
                     <Image
@@ -50,13 +50,14 @@ const Menu = ({ open, setOpen }) => {
                       alt="Personal wallet link"
                       width={16}
                       height={16}
+                      draggable="false"
                     />
                   </span>
                   <span>Personnel</span>
                 </li>
               </Link>
 
-              <Link href="/Collectif">
+              <Link href="/collective" onClick={() => setOpen(!open)}>
                 <li className="w-full pl-2 pr-5 flex items-center justify-start gap-5 py-3 text-sm">
                   <span className="px-3 py-2 bg-orange-mobileMenuBtn rounded-lg">
                     <Image
@@ -64,13 +65,14 @@ const Menu = ({ open, setOpen }) => {
                       alt="lock group saving link"
                       width={15}
                       height={15}
+                      draggable="false"
                     />
                   </span>
                   <span>Collectif</span>
                 </li>
               </Link>
 
-              <Link href="/Individual">
+              <Link href="/finance" onClick={() => setOpen(!open)}>
                 <li className="w-full pl-2 pr-5 flex items-center justify-start gap-5 py-3 text-sm">
                   <span className="p-3 bg-green-mobileMenuBtn rounded-lg">
                     <Image
@@ -78,13 +80,14 @@ const Menu = ({ open, setOpen }) => {
                       alt="Individual finance link"
                       width={15}
                       height={15}
+                      draggable="false"
                     />
                   </span>
                   <span>Individuel</span>
                 </li>
               </Link>
 
-              <Link href="/Collaboratif">
+              <Link href="/Collaboratif" onClick={() => setOpen(!open)}>
                 <li className="w-full pl-2 pr-5 flex items-center justify-start gap-5 py-3 text-sm">
                   <span className="p-3 bg-pink-mobileMenuBtn rounded-lg">
                     <Image
@@ -92,6 +95,7 @@ const Menu = ({ open, setOpen }) => {
                       alt="Collaboratif finance link"
                       width={15}
                       height={15}
+                      draggable="false"
                     />
                   </span>
                   <span>Collaboratif</span>
@@ -146,11 +150,6 @@ const Menu = ({ open, setOpen }) => {
           </div>
         ) : null}
 
-        <Link href="Connexion">
-          <div className="w-11/12 ml-2 mt-8 p-2 text-center text-primary-color rounded-lg border text-base border-primary-color">
-            Connexion
-          </div>
-        </Link>
         <Link href="/Inscription">
           <div className="w-11/12 ml-2 mt-3 p-2 text-center text-base bg-primary-color text-white rounded-lg border-2 border-primary-color">
             S'inscrire

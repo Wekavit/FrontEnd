@@ -57,7 +57,7 @@ const Navbar = () => {
           }`}
       >
         <div className="w-1/5 h-auto -mt-4">
-          <Link href="">
+          <Link href="/">
             <Image
               src={Logo}
               width={200}
@@ -69,7 +69,7 @@ const Navbar = () => {
           </Link>
 
           {/* For mobile */}
-          <Link href="">
+          <Link href="/">
             <Image
               src={logoMobile}
               width={230}
@@ -95,7 +95,7 @@ const Navbar = () => {
                           ? setContact(true)
                           : null;
                       }}
-                      className={`cursor-pointer mr-6 py-4 hover:text-primary-color transition-all duration-700 ease-in-out delay-150
+                      className={`cursor-pointer mr-4 py-4 hover:text-primary-color transition-all duration-700 ease-in-out delay-150
                         ${isActive
                           ? "ml-6 text-primary-color  transition-colors"
                           : "text-gray-500 ml-6 transition-colors"
@@ -115,6 +115,7 @@ const Navbar = () => {
               src={Login}
               width={20}
               height={20}
+              draggable="false"
               alt="Picture of the author"
               className="-mt-1 mr-2 font-bold text-sm"
             />
@@ -122,9 +123,12 @@ const Navbar = () => {
               Connexion
             </h2>
           </div>
-          <button className="ml-5 mr-5 cursor-pointer bg-primary-color text-white text-sm font-semibold flex items-center justify-center px-8 py-3 rounded-lg shadow-lg shadow-blue-300 hover:-mt-2 hover:transition-all hover:shadow-blue-200 hover:shadow-lg sm:hidden md:hidden">
-            Inscription
-          </button>
+          <Link
+            href=""
+            className="ml-5 mr-5 -mt-2 duration-300 cursor-pointer bg-primary-color text-white text-sm font-semibold flex items-center justify-center px-8 py-3 rounded-lg shadow-lg shadow-blue-300 hover:-mt-2 hover:transition-all hover:shadow-blue-200 hover:shadow-lg sm:hidden md:hidden"
+          >
+            Rejoignez-nous
+          </Link>
 
           <Burger open={open} setOpen={setOpen} />
         </div>

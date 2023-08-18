@@ -9,6 +9,8 @@ import Secure from "./components/Secure";
 import Tracking from "./components/Tracking";
 import Countries from "./components/Countries";
 import Confident from "./components/Confident";
+import Footer from "./components/Footer";
+import Hands from "./components/Hands";
 
 export default function Home() {
   return (
@@ -22,6 +24,8 @@ export default function Home() {
       <Tracking />
       <Countries />
       <Confident />
+      <Hands />
+      <Footer />
     </>
   );
 }

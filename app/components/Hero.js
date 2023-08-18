@@ -8,52 +8,46 @@ import {
   handwriterBack,
 } from "@/assets";
 import Image from "next/image";
+import { HiArrowLongRight } from "react-icons/hi2";
+import Links from "../utils/Links";
 
 export const Hero = () => {
-  const Newsletters = "https://tally.so/r/mY0jj0";
-  const WhatsApp = "https://wa.me/68887091";
-
   return (
-    <div className="w-full flex flex-wrap h-93vh mt-11vh">
+    <div className="w-full flex flex-wrap h-89vh mt-11vh sm:h-auto md:h-auto overflow-hidden">
       {/* text box  */}
       <div className="w-1/2 pl-17 h-full flex flex-col justify-center mt-8 sm:w-full md:w-full sm:h-auto md:h-auto md:py-8 md:px-20 sm:p-5">
-        <p className="text-5xl font-bold leading-tight text-hero-text mb-6 sm:text-35px sm:tracking-normal">
-          <span className="text-primary-color">Wekavit, </span>epargnez
-          juducieusement votre <br className="sm:hidden" />
-          argent
+        <h1 className="text-44px tracking-tighter font-bold text-hero-text leading-tight mb-6 sm:text-35px sm:leading-tight sm:text-3xl">
+          La façon moderne d'épargner et d'investir votre argent
+        </h1>
+        <p className="text-gray-text text-1.2rem font-normal sm:font-normal leading-relaxed mb-6 sm:leading-normal sm:-tracking-normal sm:text-sm">
+          Economisez et investissez votre argent en toute simplicité en
+          commençant par aussi peu que 500 franc. Gagnez des intérêts de 9 à 11
+          %.
         </p>
-        <p className="text-gray-text text-1.2rem font-normal sm:font-normal leading-relaxed mb-6 sm:leading-normal sm:-tracking-normal">
-          Avec wekavit construisez votre avenir financier et tracer la voie vers
-          votre meilleure vie. <br />
-        </p>
-        <div className="w-full h-auto flex flex-col">
-          <p className="text-light-gray text-xxs font-semibold mb-3">
-            Rejoignez la liste d'attente pour être le premier à savoir quand
-            nous lançons le produit
-          </p>
-        </div>
 
-        <div className="w-full flex h-auto mt-2 sm:flex-col relative">
-          <Link href={Newsletters}>
-            <div className="w-auto py-4 px-4 justify-center items-center font-medium cursor-pointer text-white bg-primary-color rounded-md sm:justify-center sm:text-center sm:w-full sm:mt-2 sm:ml-0">
+        <div className="w-full flex flex-col h-auto mt-1 sm:flex-col relative">
+          <span className="mb-2 text-xs font-semibold sm:text-xs sm:text-10px">
+            Plus tôt vous vous inscrivez, plus tôt vous aurez accès
+          </span>
+          <Link
+            href={Links.Newsletter}
+            className="w-2/3 duration-300 rounded-lg shadow-lg shadow-blue-300 sm:w-10/12"
+          >
+            <div className="flex gap-4 py-3 px-4 justify-center items-center font-medium cursor-pointer text-white bg-primary-color rounded-md hover:transition-all hover:shadow-blue-200 hover:shadow-lg sm:justify-center sm:text-center sm:w-full sm:mt-2 sm:ml-0 sm:text-sm">
               <p>Rejoindre la liste d’attente</p>
-            </div>
-          </Link>
-          <Link href={WhatsApp}>
-            <div className="w-auto p-5 flex justify-center items-center font-medium">
-              <p>Laissez nous un message</p>
+              <span className="text-lg">
+                <HiArrowLongRight />
+              </span>
             </div>
           </Link>
         </div>
       </div>
       {/* img box  */}
-      <div className="w-1/2 relative h-full flex items-end justify-center mt-8 sm:flex-col md:flex-col md:w-full sm:w-full sm:pt-5 sm:justify-center md:justify-center sm:items-center md:items-center sm:h-auto md:h-auto">
+      <div className="w-1/2 relative h-full flex items-end justify-center mt-8 sm:flex-col sm:mt-0 sm:h-auto md:flex-col md:w-full sm:w-full sm:pt-5 sm:justify-center md:justify-center sm:items-center md:items-center md:h-auto">
         <Image
           src={Avatar}
-          width={500}
-          height={1000}
           alt="woman with a phone in the hand using wekavit"
-          className="w-extra h-extra -ml-32 object-cover sm:w-full sm:-mt-2 md:w-full sm:h-350 md:-mt-16 md:h-auto sm:-ml-11 z-10"
+          className="w-auto h-extra -ml-32 object-cover sm:w-auto sm:h-80 md:w-auto md:h-96 sm:-ml-6 z-10"
           draggable={false}
         />
         <Image
@@ -86,7 +80,7 @@ export const Hero = () => {
           width={155}
           height={155}
           alt="woman with a phone in the hand using wekavit"
-          className="absolute right-20 bottom-0 sm:hidden z-0"
+          className="absolute right-20 md:mr-40 bottom-0 sm:hidden z-0"
           draggable={false}
         />
       </div>
