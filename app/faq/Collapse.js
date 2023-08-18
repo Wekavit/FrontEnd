@@ -5,6 +5,7 @@ import { HiChevronUp } from "react-icons/hi";
 
 const Collapse = ({ question, response, key, id }) => {
   const [isCollapsed, setIsCollapsed] = useState(true);
+  const [open, setOpen] = useState();
   const currentOpenCollapseId = useRef(null);
 
   const handleClick = () => {
