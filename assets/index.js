@@ -76,6 +76,11 @@ import handsMock from "../assets/images/landing/handMock.png";
 // Not found page
 import NotFoundAvatar from "../assets/images/landing/PageNotFound.webp";
 
+// Faq page
+import ProfileFaqOne from "../assets/images/landing/profiles/profileFaqOne.jpg";
+import ProfileFaqTwo from "../assets/images/landing/profiles/profileFaqTwo.jpg";
+import ProfileFaqThree from "../assets/images/landing/profiles/profileFaqThree.jpg";
+
 export {
   Logo,
   Login,
@@ -152,4 +157,9 @@ export {
 
   // Not found
   NotFoundAvatar,
+
+  // Faq
+  ProfileFaqOne,
+  ProfileFaqTwo,
+  ProfileFaqThree,
 };

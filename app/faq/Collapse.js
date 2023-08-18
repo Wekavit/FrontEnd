@@ -32,7 +32,7 @@ const Collapse = ({ question, response, key, id }) => {
   return (
     <Disclosure
       as="div"
-      className="w-2/3 pb-5 border-b-1px border-secure-border rounded-md mb-3 sm:w-4/5"
+      className="w-2/3 pb-5 border-b-1px border-secure-border rounded-md mb-3 sm:w-full"
     >
       <Disclosure.Button className="flex w-full justify-between px-4 py-3 text-left text-sm font-medium text-hero-text focus:outline-none">
         <h1 className="-ml-3 text-base sm:text-sm">{question}</h1>

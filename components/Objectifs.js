@@ -20,7 +20,7 @@ export default function Objectifs() {
         <h1 className="font-semibold text-3xl text-hero-text leading-normal mb-4 sm:w-full sm:text-xl sm:text-left md:text-2xl">
           Créez plusieurs plans d'épargne pour réaliser vos objectifs de vie !
         </h1>
-        <p className="text-base text-gray-text leading-normal mb-4 pr-8 sm:w-full sm:text-sm sm:flex sm:justify-center sm:items-center sm:pr-0 md:text-base">
+        <p className="text-base text-gray-text leading-normal mb-4 pr-8 sm:w-full sm:leading-relaxed sm:text-sm sm:flex sm:justify-center sm:items-center sm:pr-0 md:text-base">
           Qu'il s'agisse d'épargner pour une nouvelle maison, l'éducation des
           enfants ou de parcourir le monde, concentrez-vous sur ce qui compte et
           économisez votre chemin pour en faire une réalité

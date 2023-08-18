@@ -51,26 +51,12 @@ const Navbar = () => {
           change ? "bg-white border-b border-gray-200" : "")
         }`}
       >
-        <div className="w-1/5 h-auto -mt-4">
+        <div className="w-1/5 h-auto -mt-4 sm:w-auto">
           <Link href="/">
             <Image
               src={Logo}
-              width={200}
-              height={200}
               alt="Avatar wekavit"
-              className="sm:hidden object-cover"
-              draggable={false}
-            />
-          </Link>
-
-          {/* For mobile */}
-          <Link href="/">
-            <Image
-              src={logoMobile}
-              width={230}
-              height={230}
-              alt="Avatar wekavit"
-              className="object-cover hidden sm:block"
+              className="object-cover w-200 h-200 sm:w-auto sm:h-36"
               draggable={false}
             />
           </Link>

@@ -36,7 +36,7 @@ const page = () => {
       </div>
 
       <div className="w-full h-auto relative px-17 mt-4 mb-4 sm:px-5">
-        <div className=" w-full h-auto p-3 bg-white flex flex-col items-center">
+        <div className=" w-full h-auto p-3 bg-white flex flex-col items-center sm:px-3">
           <div className="w-2/3 h-auto flex justify-center items-center flex-col py-6 sm:w-full md:w-full">
             <Image
               src={StickImage}
@@ -44,10 +44,10 @@ const page = () => {
               alt="Stick image"
               draggable="false"
             />
-            <h2 className="font-semibold mt-3 text-3xl text-black-text sm:text-base md:text-2xl">
+            <h2 className="font-semibold mt-3 text-3xl text-black-text sm:text-xl md:text-2xl">
               Rencontrez notre équipe
             </h2>
-            <p className="text-center mt-3 text-gray-text text-sm sm:text-xs sm:mt-1 md:mt-1">
+            <p className="text-center mt-3 text-gray-text text-sm sm:text-sm sm:mt-1 md:mt-1">
               Notre philosophie est simple : embaucher une équipe de personnes
               diversifiées et passionnées et favoriser une culture qui vous
               permet de faire de votre mieux
@@ -64,13 +64,17 @@ const page = () => {
                 </Link>
                 <Image
                   src={cedProfile}
-                  className="w-28 h-auto rounded-full sm:w-24"
+                  className="w-28 h-auto rounded-full sm:w-32"
                   alt="Cedrick profile"
                   draggable="false"
                 />
               </div>
-              <h2 className=" font-semibold text-base mt-3">Cedrick Lupembe</h2>
-              <p className="text-xs text-gray-text">Co-founder & CEO</p>
+              <h2 className="font-semibold text-base mt-3 sm:text-lg">
+                Cedrick Lupembe
+              </h2>
+              <p className="text-xs text-gray-text sm:text-sm">
+                Co-founder & CEO
+              </p>
             </div>
             <div className="w-auto h-auto p-4 flex flex-col justify-center items-center">
               <div className="w-auto h-auto relative">
@@ -81,13 +85,17 @@ const page = () => {
                 </Link>
                 <Image
                   src={cedProfile}
-                  className="w-28 h-auto rounded-full sm:w-24"
+                  className="w-28 h-auto rounded-full sm:w-32"
                   alt="Cedrick profile"
                   draggable="false"
                 />
               </div>
-              <h2 className=" font-semibold text-base mt-3">Landry Kulondwa</h2>
-              <p className="text-xs text-gray-text">Co-founder & CTO</p>
+              <h2 className=" font-semibold text-base mt-3 sm:text-lg">
+                Landry Kulondwa
+              </h2>
+              <p className="text-xs text-gray-text sm:text-sm">
+                Co-founder & CTO
+              </p>
             </div>
             <div className="w-auto h-auto p-4 flex flex-col justify-center items-center">
               <div className="w-auto h-auto relative">
@@ -98,13 +106,17 @@ const page = () => {
                 </Link>
                 <Image
                   src={cedProfile}
-                  className="w-28 h-auto rounded-full sm:w-24"
+                  className="w-28 h-auto rounded-full sm:w-32"
                   alt="Cedrick profile"
                   draggable="false"
                 />
               </div>
-              <h2 className=" font-semibold text-base mt-3">Adolphe Kabambe</h2>
-              <p className="text-xs text-gray-text">Co-founder & COO</p>
+              <h2 className=" font-semibold text-base mt-3 sm:text-lg">
+                Adolphe Kabambe
+              </h2>
+              <p className="text-xs text-gray-text sm:text-sm">
+                Co-founder & COO
+              </p>
             </div>
           </div>
         </div>

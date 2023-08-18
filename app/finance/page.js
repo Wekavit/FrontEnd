@@ -46,7 +46,7 @@ const page = () => {
       </div>
 
       <div className="w-full px-17 bg-white flex flex-col items-center sm:px-3 mb-5">
-        <div className="w-2/3 h-auto flex justify-center items-center flex-col py-6 sm:w-full md:w-full sm:py-4">
+        <div className="w-2/3 h-auto flex justify-center items-center flex-col py-6 sm:w-full md:w-full sm:py-4 sm:px-3">
           <h2 className="font-semibold mt-3 text-3xl text-black-text sm:text-2xl md:text-2xl">
             Pourquoi investir ?
           </h2>
@@ -56,8 +56,8 @@ const page = () => {
           </p>
         </div>
 
-        <div className="w-full px-9 py-3 flex flex-wrap mb-5 justify-center gap-7 sm:w-full md:flex-col md:flex-nowrap sm:mb-0 sm:gap-6 sm:py-7 md:w-full md:gap-6">
-          <div className="w-30 py-9 px-6 bg-white rounded relative flex flex-col items-center border-blue-small border sm:w-full md:w-11/12">
+        <div className="w-full px-9 py-3 flex flex-wrap mb-5 justify-center gap-7 sm:w-full md:flex-col sm:px-3 md:flex-nowrap sm:mb-0 sm:gap-6 sm:py-7 md:w-full md:gap-6">
+          <div className="w-30 py-9 px-6 bg-white rounded relative flex flex-col items-center border-blue-small border sm:w-full sm:px-3 md:w-11/12">
             <div className="w-12 h-12 rounded-full text-white bg-primary-color flex justify-center items-center">
               1
             </div>
@@ -71,7 +71,7 @@ const page = () => {
             </p>
           </div>
 
-          <div className="w-30 py-9 px-6 bg-white rounded relative flex flex-col items-center border-blue-small border sm:w-full md:w-11/12">
+          <div className="w-30 py-9 px-6 bg-white rounded relative flex flex-col items-center border-blue-small border sm:w-full sm:px-3 md:w-11/12">
             <div className="w-12 h-12 rounded-full text-white bg-primary-color flex justify-center items-center">
               2
             </div>
@@ -85,7 +85,7 @@ const page = () => {
             </p>
           </div>
 
-          <div className="w-30 py-9 px-6 bg-white rounded relative flex flex-col items-center border-blue-small border sm:w-full md:w-11/12">
+          <div className="w-30 py-9 px-6 bg-white rounded relative flex flex-col items-center border-blue-small border sm:w-full sm:px-3 md:w-11/12">
             <div className="w-12 h-12 rounded-full text-white bg-primary-color flex justify-center items-center">
               3
             </div>
@@ -180,14 +180,14 @@ const page = () => {
             <h1 className="mt-2 text-3xl font-bold sm:text-2xl">
               Écoutez ce que disent nos clients
             </h1>
-            <p className="mt-2 pr-5 text-gray-text sm:text-sm">
+            <p className="mt-2 pr-5 text-gray-text sm:text-sm leading-relaxed">
               Notre mission chez Wekavit est de permettre à plus de personnes
               comme vous d'atteindre vos objectifs financiers personnels.
             </p>
           </div>
 
           <div className="w-full h-auto p-9 bg-white mt-7 rounded-lg shadow-lg">
-            <p className="leading-relaxed text-gray-text sm:text-sm">
+            <p className="leading-relaxed text-gray-text sm:text-sm sm:leading-loose">
               Comme tout le monde, je veux être protégé des fluctuations
               monétaires et Wekavit m'y aide. Les classes d'actifs à revenu fixe
               et immobilier sont mes choses préférées. J’aime voir comment mes
@@ -206,7 +206,7 @@ const page = () => {
 
         <div className="w-2/4 h-auto p-3 sm:w-full sm:-mt-5">
           <div className=" w-full h-auto p-9 bg-white mt-7 rounded-lg shadow-lg">
-            <p className="leading-relaxed text-gray-text sm:text-sm">
+            <p className="leading-relaxed text-gray-text sm:text-sm sm:leading-loose">
               J'ai choisi Wekavit en raison de son leadership, de la richesse de
               ses connaissances et des personnes qui les soutiennent. Je rejoint
               la communauté afin de protéger mon épargne et mon investissement
@@ -224,7 +224,7 @@ const page = () => {
           </div>
 
           <div className=" w-full h-auto p-9 bg-white mt-7 rounded-lg shadow-lg">
-            <p className="leading-relaxed text-gray-text sm:text-sm">
+            <p className="leading-relaxed text-gray-text sm:text-sm sm:leading-loose">
               Je ne veux pas investir dans des actions distinctes parce que je
               ne suis pas un expert financier et je préfère confier mon argent
               entre les mains de personnes comme Wekavit qui sont compétentes et

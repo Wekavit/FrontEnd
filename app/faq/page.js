@@ -2,7 +2,7 @@ import React from "react";
 import Collapse from "./Collapse";
 // import Footer from "../components/Footer";
 import Footer from "@/components/Footer";
-import { cedProfile } from "@/assets";
+import { ProfileFaqOne, ProfileFaqTwo, ProfileFaqThree } from "@/assets";
 import Image from "next/image";
 
 export default function page() {
@@ -75,34 +75,37 @@ export default function page() {
       <h4 className="text-base text-light-gray text-center mb-3 sm:text-sm sm:w-2/3 font-medium md:text-sm sm:mt-2 sm:mb-0">
         Tout ce que vous devez savoir sur le produit et sa facturation
       </h4>
-      <div className="w-full flex flex-col justify-center items-center mt-10 sm:w-full">
+      <div className="w-full flex flex-col justify-center items-center mt-10 sm:w-full sm:px-3">
         {Answsers}
       </div>
       <div className="w-full h-auto px-5 mb-7 mt-10">
         <div className="w-full flex flex-col items-center bg-white py-10 px-20 sm:px-3">
           <div className="w-1/3 flex items-center justify-center mb-5">
             <Image
-              src={cedProfile}
+              src={ProfileFaqOne}
+              draggable="false"
               alt=""
-              className="w-12 h-12 rounded-full -mr-3"
+              className="w-12 h-12 rounded-full -mr-3 object-cover"
             />
             <Image
-              src={cedProfile}
+              src={ProfileFaqThree}
+              draggable="false"
               alt=""
-              className="w-14 h-14 rounded-full border-1px border-white -mt-2 z-10"
+              className="w-14 h-14 rounded-full border-1px border-white -mt-2 z-10 object-cover"
             />
             <Image
-              src={cedProfile}
+              src={ProfileFaqTwo}
+              draggable="false"
               alt=""
-              className="w-12 h-12 rounded-full -ml-3"
+              className="w-12 h-12 rounded-full -ml-3 object-cover"
             />
           </div>
           <p className="text-center font-semibold text-base text-hero-text leading-tight mb-3 sm:w-full sm:text-center sm:text-lg sm:tracking-normal sm:leading-normal sm:mb-2 md:text-3xl md:w-full">
             Avez-vous encore des questions ?
           </p>
-          <h4 className="text-sm text-light-gray text-center mb-3 sm:text-xs font-medium md:text-sm">
+          <p className="text-sm text-light-gray text-center mb-3 px-3 sm:text-xs md:text-sm">
             Tout ce que vous devez savoir sur le produit et sa facturation
-          </h4>
+          </p>
           <button className="text-white bg-primary-color font-medium mt-3 flex justify-center items-center text-sm px-4 py-3 rounded-md">
             Entrer en contact
           </button>

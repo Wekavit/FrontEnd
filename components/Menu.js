@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { HiOutlineChevronDown } from 'react-icons/hi'
+import { HiOutlineChevronDown } from "react-icons/hi";
 
 // Icons
 import {
@@ -10,7 +10,7 @@ import {
   PersonnalWallet,
   IndividualBank,
 } from "@/assets";
-// import { PersonnelWallet } from "@/assets";
+import Social from "@/utils/Social";
 
 const Menu = ({ open, setOpen }) => {
   const [services, setServices] = useState(false);
@@ -31,8 +31,9 @@ const Menu = ({ open, setOpen }) => {
             onClick={() => setServices(!services)}
           >
             <HiOutlineChevronDown
-              className={`text-sm transition-all ease-in-out delay-150 ${services ? "rotate-180" : ""
-                }`}
+              className={`text-sm transition-all ease-in-out delay-150 ${
+                services ? "rotate-180" : ""
+              }`}
             />
           </button>
         </li>
@@ -124,8 +125,9 @@ const Menu = ({ open, setOpen }) => {
             onClick={() => setContact(!contact)}
           >
             <HiOutlineChevronDown
-              className={`text-sm transition-all ease-in-out delay-150 ${contact ? "rotate-180" : ""
-                }`}
+              className={`text-sm transition-all ease-in-out delay-150 ${
+                contact ? "rotate-180" : ""
+              }`}
             />
           </button>
         </li>
@@ -150,9 +152,9 @@ const Menu = ({ open, setOpen }) => {
           </div>
         ) : null}
 
-        <Link href="/Inscription">
+        <Link href={Social.Newsletter}>
           <div className="w-11/12 ml-2 mt-3 p-2 text-center text-base bg-primary-color text-white rounded-lg border-2 border-primary-color">
-            {`S'inscrire`}
+            S'inscrire
           </div>
         </Link>
       </ul>

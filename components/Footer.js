@@ -5,7 +5,8 @@ import Link from "next/link";
 import Social from "../utils/Social";
 
 // Icons
-import { FaLinkedin, FaFacebook, FaTwitter } from "react-icons/fa";
+import { FaFacebook, FaTwitter } from "react-icons/fa";
+import { BiLogoLinkedin } from "react-icons/bi";
 
 const Footer = () => {
   return (
@@ -30,7 +31,7 @@ const Footer = () => {
               href={Social.Linkedin}
               className=" p-2 bg-blue-mobileMenuBtn text-gray-text rounded-full hover:text-white hover:bg-primary-color transition-all duration-300 ease-in-out delay-150"
             >
-              <FaLinkedin />
+              <BiLogoLinkedin />
             </Link>
 
             <Link
