@@ -38,7 +38,7 @@ const Collapse = ({ question, response, key, id }) => {
         <HiChevronUp
           className={`${
             open ? "rotate-180 transform" : ""
-          } h-5 w-5 text-primary-color`}
+          } h-5 w-5 p-0 text-primary-color`}
         />
       </Disclosure.Button>
       <Transition
