@@ -30,9 +30,9 @@ const Collapse = ({ question, response, key, id }) => {
     console.log(currentOpenCollapseId, id)
 
     return (
-        <Disclosure as="div" className="w-2/3 pb-7 border-b-1px border-secure-border rounded-md">
-            <Disclosure.Button className="flex w-full justify-between rounded-lg bg-purple-100 px-4 py-2 text-left text-sm font-medium text-hero-text hover:bg-purple-200 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
-                <span>{question}</span>
+        <Disclosure as="div" className="w-2/3 pb-5 border-b-1px border-secure-border rounded-md mb-3">
+            <Disclosure.Button className="flex w-full justify-between rounded-lg px-4 py-2 text-left text-sm font-medium text-hero-text hover:bg-purple-200 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
+                <span className="-ml-3">{question}</span>
                 <HiChevronUp
                     className={`${open ? 'rotate-180 transform' : ''
                         } h-5 w-5 text-purple-500`}

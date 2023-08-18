@@ -48,12 +48,12 @@ export default function page() {
 
     const Answsers = faqs.map((item) => <Collapse question={item.question} response={item.response} key={item.key} id={item.id} />)
     return (
-        <div className='pt-48 w-full h-auto flex flex-col justify-center'>
+        <div className='pt-48 w-full h-auto flex flex-col justify-center sm:items-center'>
             <p className="text-center font-semibold text-4xl text-hero-text leading-tight mb-4 sm:w-full sm:text-center sm:text-1.56rem sm:tracking-normal sm:leading-normal sm:mb-2 md:tracking-normal md:text-3xl md:w-full">Questions fréquemment posées</p>
-            <h4 className='text-base text-light-gray text-center mb-3 sm:text-xs sm:w-2/3 font-medium md:text-sm'>Tout ce que vous devez savoir sur le produit et sa facturation</h4>
+            <h4 className='text-base text-light-gray text-center mb-3 sm:text-xs sm:w-2/3 font-medium md:text-sm sm:mt-2 sm:mb-0'>Tout ce que vous devez savoir sur le produit et sa facturation</h4>
             <div className='w-full flex flex-col justify-center items-center mt-10'>{Answsers}</div>
             <div className='w-full h-auto px-5 mb-7 mt-10'>
-                <div className='w-full flex flex-col items-center bg-white py-10 px-20'>
+                <div className='w-full flex flex-col items-center bg-white py-10 px-20 sm:px-3'>
                     <div className='w-1/3 flex items-center justify-center mb-5'>
                         <Image
                             src={cedProfile}
