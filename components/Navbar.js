@@ -16,13 +16,6 @@ const Navbar = () => {
   const [service, setService] = useState(false);
   const [contact, setContact] = useState(false);
 
-  // Block scroll on menu open
-  if (open) {
-    document.body.style.overflow = "hidden";
-  } else {
-    document.body.style.overflow = null;
-  }
-
   // Change Navbar style on scroll
   const controlNavbar = () => {
     if (window.scrollY > 20) {
